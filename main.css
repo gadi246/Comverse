@@ -29,7 +29,7 @@ a:link {
 	color: #fff;
 }
 .lower-header{
-	background-image: url(/images/slide-bg-complexity.jpg);
+	background-image: url(images/slide-bg-complexity.jpg);
 }
 .lower-header button{
 	 background-color: #2894c9;
@@ -67,7 +67,7 @@ color:#fff;
 }
 /*events section*/
 .events {
-	background-image: url(/images/news-and-events-bg.jpg);
+	background-image: url(images/news-and-events-bg.jpg);
 }
 .events a,
 .events {
