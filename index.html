@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Comverse Home page</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<header><!--white upper header with the  main nav-->
 		<div class="upper-header">
-			<a href="http://"><img src="" alt="logo"></a>
+			<a href="http://"><img src="/images/comverse-logo.png" alt="logo"></a>
 			<nav>
 			  <ul>
-				<li>your needs <img src="" alt="divider">
+				<li>your needs <img src="/images/divider.png" alt="divider">
 				  <ul>
 				  	<li><a href="http://">data monetization</a></li>
 				  	<li><a href="http://">over-the-top (ott)</a></li>
@@ -20,11 +21,10 @@
 				  	<li><a href="http://">4g/lte</a></li>
 				  	<li><a href="http://">rich communication (rcs)</a></li>
 				  	<li><a href="http://">machine to machine (m2m)</a></li>
-				  	
 				  </ul>
 				</li>				
-				<li>our portfolio <img src="" alt="divider"></li><!-- no info about it...-->
-				<li>news & media <img src="" alt="divider">
+				<li>our portfolio <img src="/images/divider.png" alt="divider"></li><!-- no info about it...-->
+				<li>news & media <img src="/images/divider.png" alt="divider">
 				  <ul>
 				      <li><a href="http://">press releases</a></li>
 					  <li><a href="http://">events</a></li>
@@ -54,8 +54,8 @@
 			</nav>
             <form class="search form">
               <input type="search">
-              <img src="" alt="divider">
-              <button><img src="" alt="search-button"></button>              
+              <img src="/images/search_line_devider.png" alt="divider">
+              <button class="search-btn"><img src="/images/searchBtn.png" alt="search-button"></button>              
             </form>
             <span class="lang-login">
               <select name="" id="" class="lang selection">
@@ -63,17 +63,17 @@
               	<option value="">he</option>
               	<option value="">fr</option>
               </select>
-              <img src="" alt="divider">
-              <button class="customer-login">customer login</button>            	
+              <img src="/images/divider.png" alt="divider">
+              <button class="customer-login">customer login</button>         	
             </span>
 		</div><!--end of upper header-->
 		<section class="lower-header"><!--lower header -->
 		  <ul><!--header slider | the slider counter is missing...-->
 		  	<li>
 		  		<article>
-		  			<h1><strong>free</strong> your market from <br>IT <strong>complexity</strong></h1>
+		  			<h1><b>free</b> your market from <br>IT <b>complexity</b></h1>
 		  			<p>comverse policy studio <br><strong>1st</strong> ever marketign-oriented policy tool</p>
-		  			<button><a href="http://">learn more <img src="" alt="button arrow"></a></button>
+		  			<button class="slider-btn">learn more <img src="/images/btnArrow.png" alt="button arrow"></button>
 		  		</article>
 		  	</li>
 		  	<li>
@@ -97,73 +97,83 @@
 		  			<button></button>
 		  		</article>
 		  	</li>
-		  </ul><!--end of header slider-->
-		  <ul><!--3 colorful press blocks-->
+		  </ul>
+		  <nav class="slider-nav"><!--slider bar-->
+		  	<ul>
+		  		<li><a href="#" class="slider-nav-item">&nbsp;</a></li>
+		  		<li><a href="#" class="slider-nav-item">&nbsp;</a></li>
+		  		<li><a href="#" class="slider-nav-item">&nbsp;</a></li>
+		  		<li><a href="#" class="slider-nav-item">&nbsp;</a></li>
+		  	</ul>
+		  </nav>
+		<div class="press"> <!--3 colorful press blocks-->
+		  <ul>
 		  	<li>
-		  		<article>
+		  		<article class="press item1">
 		  			<h3>comverse is value-added service global market leader</h3>
-		  			<a href="http://">read more<img src="" alt="link"></a>
+		  			<a href="http://"><img src="/images/link-icon-image.png" alt="link">read more</a>
 		  		</article>
 		  	</li>
 		  	<li>
-		  		<article>
+		  		<article class="press item2">
 		  			<h3>managed sevice world congress september 18-19 berlin, germany</h3>
-		  			<a href="http://">read more<img src="" alt="article"></a>
+		  			<a href="http://"><img src="/images/link-icon-image.png" alt="article">read more</a>
 		  		</article>
 		  	</li>
 		  	<li>
-		  		<article>
+		  		<article class="press item3">
 		  			<h3>comverse enabling a world of conected possibilities</h3>
-		  			<a href="http://">watch now<img src="" alt="video"></a>
+		  			<a href="http://"><img src="/images/" alt="video">watch now</a>
 		  		</article>
 		  	</li>
 		  </ul>  
+		 </div>  
 		</section><!--end lower header-->
 	</header>
 	<main>
-	  <section><!--solution section-->
+	  <section class="solutions"><!--solution section-->
 	  	<h2>what can we do for you?</h2> 
 	  	<ul>
 	  		<li>
 	  			<section>
-	  				<a href="http://"><img src="" alt="data">
+	  				<a href="http://"><img src="/images/solution_icon_biz-analitics.png" alt="data">
 	  				<h6>data monetization</h6></a>
 	  			</section>
 	  		</li>
 	  		<li>
 	  			<section>
-	  				<a href="http://"><img src="" alt="m2m">
-	  				<h6>machine to machine (m2m)</h6></a>
-	  			</section>
-	  		</li>
-	  		<li>
-	  			<section>
-	  				<a href="http://"><img src="" alt="ott">
+	  				<a href="http://"><img src="/images/solution_icon_diti-cx.png" alt="ott">
 	  				<h6>over-the-top (ott)</h6></a>
 	  			</section>
 	  		</li>
 	  		<li>
 	  			<section>
-	  				<a href="http://"><img src="" alt="cloud">
+	  				<a href="http://"><img src="/images/solution_icon_smart-money.png" alt="cloud">
 	  				<h6>cloud computing</h6></a>
 	  			</section>
 	  		</li>
 	  		<li>
 	  			<section>
-	  				<a href="http://"><img src="" alt="ms">
+	  				<a href="http://"><img src="/images/solution_icon_optimize-efficnt.png" alt="ms">
 	  				<h6>managed servies</h6></a>
 	  			</section>
 	  		</li>
 	  		<li>
 	  			<section>
-	  				<a href="http://"><img src="" alt="sm">
+	  				<a href="http://"><img src="/images/solution_icon_personal.png" alt="sm">
 	  				<h6>social media</h6></a>
 	  			</section>
 	  		</li>
+	  		<li>
+	  			<section>
+	  				<a href="http://"><img src="/images/solution_icon_biz-transform.png" alt="m2m">
+	  				<h6>machine to machine (m2m)</h6></a>
+	  			</section>
+	  		</li>
 	  	</ul>
-	  	<button><a href="http://">see all of our solutions<img src="" alt="button arrow"></a></button>
+	  	<button><a href="http://">see all of our solutions<img src="/images/btnArrow.png" alt="button arrow"></a></button>
 	  </section><!--end of solution section-->	
-	  <section><!--events section-->
+	  <section class="events"><!--events section-->
 	  	<h2>what's happening in comverse</h2>
 	  	  <ul>
 	  	  	<li>
@@ -173,7 +183,7 @@
 	  	  				<img src="" alt="04 sep">
 	  	  				<p>comverse regains lead in convergent charging market regains lead in</p>
 	  	  			</div>
-	  	  			<a href="http://">all news<img src="" alt="news"></a>
+	  	  			<a href="http://"><img src="/images/eventListIconNews.png" alt="news">all news</a>
 	  	  		</article>
 	  	  	</li>
 	  	  	<li>
@@ -183,7 +193,7 @@
 	  	  				<img src="" alt="04 sep">
 	  	  				<p>comverse regains lead in convergent charging market regains lead in</p>
 	  	  			</div>
-	  	  			<a href="http://">all events<img src="" alt="events"></a>
+	  	  			<a href="http://"><img src="/images/eventListIconEvents.png" alt="events">all events</a>
 	  	  		</article>
 	  	  	</li>
 	  	  	<li>
@@ -193,71 +203,123 @@
 	  	  				<img src="" alt="04 sep">
 	  	  				<p>comverse regains lead in convergent charging market regains lead in</p>	  	  				
 	  	  			</div>
-	  	  			<a href="http://">all events<img src="" alt="events"></a>
+	  	  			<a href="http://"><img src="/images/eventListIconEvents.png" alt="events">all events</a>
 	  	  		</article>
 	  	  	</li>
 	  	  </ul>
 	  </section><!--end of events section-->	
-	  <section><!--success stories-->
+	  <section class="stories"><!--success stories-->
 	    <h2>success stories</h2>
 	    <ul>
 	    	<li>
 	    		<article>
-	    		  <img src="" alt="sergey korotych">
-	    		  <img src="" alt="quote">
-	    		  <p>we have very good and very warm relations with comvers. we always achievet..."</p>
-	    		  <a href="http://">sergey korotych</a>
-	    		  <p>deputy CTO, 3mob ukraine</p>
-	    		  <a href="http://"><img src="" alt="3mob"></a>
+	    		  <img src="/images/CB-JP-face.png" alt="JONATHAN PIERCE">
+	    		  <img src="/images/quote-grey.png" alt="quote">
+	    		  <blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solut..."</blockquote>
+	    		  <a href="http://">JONATHAN PIERCE</a>
+	    		  <p>Group Mobile Architecht</p>
+	    		  <a href="http://"><img src="/images/cable_wireless_w100px_X_h42px2.jpg" alt="cable adn wireless"></a>
 	    		</article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="cycle30"></a></article>
+	    		<article><a href="http://"><img src="/images/mts_w108px_X_h95px.jpg" alt="cycle30"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="bull"></a></article>
+	    		<article><a href="http://"><img src="/images/Tata_Sky_w108px_X_h95px.jpg" alt="bull"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="gempluss"></a></article>
+	    		<article><a href="http://"><img src="/images/upc_w108px_X_h95px.jpg" alt="gempluss"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="mtc"></a></article>
+	    		<article><a href="http://"><img src="/images/MAX_telecom_w108px_X_h95.jpg" alt="mtc"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="cable&wireless"></a></article>
+	    		<article><a href="http://"><img src="/images/Kyivstarw_w108px_X_h95.jpg" alt="cable&wireless"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="trilogy internatioal partners"></a></article>
+	    		<article><a href="http://"><img src="/images/VIDEOCON_w108px_X_h95px.jpg" alt="trilogy internatioal partners"></a></article>
 	    	</li>
 	    	<li>
 	    		<article>
-	    		  <img src="" alt="adale kehassan">
-	    		  <img src="" alt="quote">
-	    		  <p>comverse has demonstrated that they are partner, not just suppliers, because theyunderstand oour needs, out situations; togather we are...</p>
-	    		  <a href="http://">adale kehassan</a>
-	    		  <p>CIO of multi-links</p>
-	    		  <a href="http://"><img src="" alt="multi-links"></a>
+	    		  <img src="/images/JT-GM-face.png" alt="greame miller">
+	    		  <img src="/images/quote-grey.png" alt="quote">
+	    		  <blockquote>The Expectation of Jersey Telecom have been completed met by Comvers...</blockquote>
+	    		  <a href="http://">GREAME MILLER</a>
+	    		  <p>CEO</p>
+	    		  <a href="http://"><img src="/images/Jersey_Telecom_w100px_X_h42px.jpg" alt="Jersey Telecom"></a>
 	    		</article>
 	    	</li>
 	    	<li>
 	    		<article>
-	    		  <img src="" alt="quote">
-	    		  <p>comverse has been able to fully deliver what we want and we have peers...</p>
-	    		  <a href="http://">ravishanker</a>
-	    		  <p>TATA Sky CIO N.</p>
-	    		  <a href="http://"><img src="" alt="tata sky"></a>
+	    		  <img src="/images/quote-grey.png" alt="quote">
+	    		  <blockquote>comverse has demonstrated that they are partners not just suppliers...</blockquote>
+	    		  <a href="http://">ADALE KEHASSAN</a>
+	    		  <p>CIO</p>
+	    		  <a href="http://"><img src="/images/multilinks.jpg" alt="multi links"></a>
 	    		</article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="hp"></a></article>
+	    		<article><a href="http://"><img src="/images/3mob_w108px_X_h95px.jpg" alt="hp"></a></article>
 	    	</li>
 	    	<li>
-	    		<article><a href="http://"><img src="" alt="atos"></a></article>
+	    		<article><a href="http://"><img src="/images/play_w108px_X_h95px.jpg" alt="atos"></a></article>
 	    	</li>
 	    </ul>	  	
-	  </section>
+	    <button>all 256 success stories <img src="/images/btnArrow.png" alt="btn arrow"></button>
+	  </section><!-- end of success stories-->
 	</main>
-	<footer></footer>
+	<footer>
+	  <ul>
+	    <li><a href="http://">key solutions</a></li>
+			<li><a href="http://">data monetization</a></li>
+			<li><a href="http://">over-the-top (ott)</a></li>
+			<li><a href="http://">cloud computing</a></li>
+			<li><a href="http://">managed servies</a></li>
+			<li><a href="http://">social media</a></li>
+			<li><a href="http://">4g/lte</a></li>
+			<li><a href="http://">rich communication (rcs)</a></li>
+			<li><a href="http://">machine to machine (m2m)</a></li>
+		</ul>
+    <ul>
+    	<li><a href="http://">product & services</a></li>
+    	<li><a href="http://">billing</a></li>
+    	<li><a href="http://">VAS</a></li>
+    	<li><a href="http://">mobile internet</a></li>
+    	<li><a href="http://">global services</a></li>
+    	<li><a href="http://">training services</a></li>
+    </ul>
+    <ul>
+    	<li><a href="http://">company</a></li>
+    	<li><a href="http://">excutive profiles</a></li>
+    	<li><a href="http://">clients</a></li>
+    	<li><a href="http://">investors</a></li>
+    	<li><a href="http://">partners</a></li>
+    	<li><a href="http://">corparate resposibility</a></li>
+    	<li><a href="http://">industry involvement</a></li>
+    	<li><a href="http://">careers</a></li>
+    </ul>
+    <small>Copyright &copy; 2012 Comverse, Inc | Privacy Policy</small>
+    <div class="feature-box">
+     <article>
+     	<a href="http://"><h2>latest blog posts</h2></a>
+     	<img src="" alt="18th-july">
+     	<p>Comverse regains lead in convergent charging market </p>
+     </article>
+     <br>
+     <form action="">
+     	<h2>subscribe to comverse</h2>
+     	<input type="email" placeholder="ronit.klein@gmail.com">
+     	<button>SIGN UP</button>
+     </form>
+     <div class="social-nav">
+     	<ul>
+     		<li><a href="http://"><img src="/images/socialMenuIcon-youtube.png" alt="youtube"></a></li>
+     		<li><a href="http://"><img src="/images/socialMenuIcon-twitter.png" alt="twitter"></a></li>
+     		<li><a href="http://"><img src="/images/socialMenuIcon-linkdin.png" alt="linkedin"></a></li>
+     	</ul>
+     </div>    	
+    </div>
+	</footer>
 </body>
 </html>
 
