@@ -15,12 +15,28 @@ a:link {
 	color: #585951;
 }
 .upper-header{
-	font-family: "Arial regualr";
+	font-family: Arial;
 }
 .upper-header button{
 	background-color: #ffffff;
 	border: none;
 }
+.nav-tabs {
+	display: inline-block;
+	text-transform: uppercase;
+}
+.dropdown {
+	display: none;
+}
+
+.divider {            /* align the divider img  */
+	vertical-align: middle; 
+}
+.nav-tabs:hover .dropdown {
+display: block;
+overflow: auto;
+}
+
 
 /*lower header*/
 .lower-header,
@@ -28,8 +44,11 @@ a:link {
 .lower-header a{
 	color: #fff;
 }
-.lower-header{
+.lower-header{/*main slider img*/
 	background-image: url(images/slide-bg-complexity.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 .lower-header button{
 	 background-color: #2894c9;
@@ -119,6 +138,7 @@ color: #4ea7d3;
 .feature-box button {
 	background: #36a1d7;
 	color: #fff;
+	
 
 }
 
