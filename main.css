@@ -21,21 +21,56 @@ a:link {
 	background-color: #ffffff;
 	border: none;
 }
-.nav-tabs {
+.main-nav { /*align the main nav*/
+	position: absolute;
+	left: 300px;
+	top: 45px;	
+}
+
+.nav-tabs {        /*main nav menu: aligi horizotaly*/
 	display: inline-block;
 	text-transform: uppercase;
 }
-.dropdown {
+.dropdown {         /*hide sub menu of the main menu*/
 	display: none;
 }
 
 .divider {            /* align the divider img  */
 	vertical-align: middle; 
 }
-.nav-tabs:hover .dropdown {
+.nav-tabs:hover .dropdown { /* show submenu when hovering*/
 display: block;
-overflow: auto;
+
 }
+.search-form {       /*position the search element*/
+	position: absolute;
+	right:20px;
+	top:50px
+}
+.search-form img {
+	vertical-align: middle;
+}
+.search-form input {
+	border: none;
+}
+.search-form input:focus {
+	outline: none;
+}
+.search-form fieldset{
+	margin:0;
+	padding: 2px;
+	border:1px solid #585951;
+	border-radius: 10px;
+}
+.lang-login {       /*position the lang&login element*/
+	position: absolute;
+	right: 80px;
+	top: 20px;
+}
+.lang-login img {
+	vertical-align: middle;
+}
+
 
 
 /*lower header*/
