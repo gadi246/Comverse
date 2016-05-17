@@ -1,5 +1,9 @@
 /* main css */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+body {
+	font-family: "Open Sans";
+}
 
  li{
 	list-style:none;
@@ -7,29 +11,43 @@
 a:link {
     text-decoration: none;
 }
-
-/*upper header*/
+/*============
+upper header
+==============*/
 .upper-header li,
 .lang,
 .upper-header button{
 	color: #585951;
 }
 .upper-header{
-	font-family: Arial;
+	font-family: "Arial";
 }
 .upper-header button{
-	background-color: #ffffff;
+	background: #ffffff;
 	border: none;
+}
+.upper-header>a {
+	margin-left: 30px;
+	margin-top:10px;
+	
 }
 .main-nav { /*align the main nav*/
 	position: absolute;
 	left: 300px;
-	top: 45px;	
+	top: 45px;
+	color: 	
 }
 
 .nav-tabs {        /*main nav menu: aligi horizotaly*/
 	display: inline-block;
 	text-transform: uppercase;
+}
+.nav-tabs .divider {
+	padding-left: 5px; 
+	padding-right: 5px;
+}
+.nav-tabs>a {
+	color: #585951;
 }
 .dropdown {         /*hide sub menu of the main menu*/
 	display: none;
@@ -40,6 +58,7 @@ a:link {
 }
 .nav-tabs:hover .dropdown { /* show submenu when hovering*/
 display: block;
+position: absolute;
 
 }
 .search-form {       /*position the search element*/
@@ -48,18 +67,18 @@ display: block;
 	top:50px
 }
 .search-form img {
-	vertical-align: middle;
+	vertical-align: middle; /*position the search divider in middle of the element*/
 }
-.search-form input {
+.search-form input {        
 	border: none;
 }
-.search-form input:focus {
+.search-form input:focus {   /* delete the input outline*/
 	outline: none;
 }
-.search-form fieldset{
+.search-form fieldset{        /* adding an outline round whole element*/
 	margin:0;
 	padding: 2px;
-	border:1px solid #585951;
+	border:1px solid #d2d2d2;
 	border-radius: 10px;
 }
 .lang-login {       /*position the lang&login element*/
@@ -67,48 +86,62 @@ display: block;
 	right: 80px;
 	top: 20px;
 }
-.lang-login img {
+.lang-login img {         /*position the search divider in middle of the element*/
 	vertical-align: middle;
 }
+.lang-selection {
+	text-transform: uppercase;
+}
+.customer-login::first-letter {
+	text-transform: uppercase;
+}
 
-
-
-/*lower header*/
+/*===========
+lower header
+=============*/
 .lower-header,
 .lower-header button,
 .lower-header a{
 	color: #fff;
 }
-.lower-header{/*main slider img*/
-	background-image: url(images/slide-bg-complexity.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-
-}
 .lower-header button{
 	 background-color: #2894c9;
 }
+.lower-header{
+  overflow: hidden;
+}
 .press{
-  border-radius:5px;
+	border-radius:5px;
+	float: left;
+	width: 250px;
+	height: 150px;
+	margin-left: 7%;
+	
+
 }
 .item1{
-	background-color: rgba(247,64,158,0.9);
+	background-color: rgba(250,66,158,0.9);
 }
 .item2{
-background-color: rgba(104,193,57,0.9);	
+background-color: rgba(104,192,56,0.9);	
 }
 .item3{
-	background-color: rgba(255,117,25,0.9);
+	background-color: rgba(255,116,20,0.9);
+}
+.slide {
+	display: none;
+}
+.onpageload {
+	display: block;
 }
 
 /*solutions section*/
-
-
 h6{
 	font-size: 20px;
 }
 .solutions{
 	background: #43a2c8;
+	text-align: center;
 
 }
 .solutions,
@@ -118,6 +151,10 @@ color:#fff;
 }
 .solutions button{
 	background: #3a95b5;
+}
+.solutions li {
+	display: inline-block;
+	margin-left:20px; 
 }
 /*events section*/
 .events {
