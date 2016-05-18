@@ -1,8 +1,16 @@
 /* main css */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html {
+	font-size: 62.5%;
+}
 
 body {
 	font-family: "Open Sans";
+	font-weight: 300;
+	width: 960px
+	padding: 0;
+	margin: 0;
 }
 
  li{
@@ -21,6 +29,7 @@ upper header
 }
 .upper-header{
 	font-family: "Arial";
+	padding-bottom: 10px;
 }
 .upper-header button{
 	background: #ffffff;
@@ -35,10 +44,10 @@ upper header
 	position: absolute;
 	left: 300px;
 	top: 45px;
-	color: 	
+	
 }
 
-.nav-tabs {        /*main nav menu: aligi horizotaly*/
+.nav-tabs {        /*main nav menu: aligin horizotaly*/
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -107,20 +116,36 @@ lower header
 .lower-header button{
 	 background-color: #2894c9;
 }
-.lower-header{
-  overflow: hidden;
+.lower-header {
+  background-image: url(images/slide-bg-complexity.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: fixed;
 }
-.press{
+.press-wrapper ul{
+	text-align: center;
+}
+.press-wrapper li {
+	display: inline-block;
+
+}
+.press {
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	font-weight: 300;
 	border-radius:5px;
-	float: left;
-	width: 250px;
-	height: 150px;
-	margin-left: 7%;
-	
+	width: 190px;
+	height: 120px;
+	padding: 0 30px 20px 10px;
+	margin-left: 50px;
+	margin-bottom: 10px; 
+
+
 
 }
 .item1{
-	background-color: rgba(250,66,158,0.9);
+	background-color: rgba(250,66,158,0.7);
+	margin-left: 0;
 }
 .item2{
 background-color: rgba(104,192,56,0.9);	
@@ -128,12 +153,17 @@ background-color: rgba(104,192,56,0.9);
 .item3{
 	background-color: rgba(255,116,20,0.9);
 }
+
 .slide {
 	display: none;
 }
 .onpageload {
 	display: block;
+	margin-left: 18%;
+	padding-top: 5%;
+
 }
+
 
 /*solutions section*/
 h6{
