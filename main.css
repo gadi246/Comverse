@@ -1,13 +1,13 @@
 /* main css */
 /*general settings*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
 html {
 	font-size: 62.5%;
 }
 
 body {
 	font-family: "Open Sans";
-	font-weight: 300;
+	font-weight: 100;
 	width: 960px
 	padding: 0;
 	margin: 0;
@@ -31,7 +31,7 @@ upper header
 .upper-header{
 	font-family: "Arial";
 	padding-bottom: 10px;
-	height: 70px;
+	height: 50px;
 	position: relative;		
 }
 .upper-header button{
@@ -41,11 +41,12 @@ upper header
 .upper-header>div {    /*aligning the Comverse logo*/
 	position: absolute;
 	bottom: 0px;
-	left: 291px;
-}
+	left: 100px;
+
+	}
 .main-nav { /*align the main nav*/
 	text-align: center;
-	line-height: 15rem;	
+	line-height: 9rem;	
 }
 .nav-tabs {        /*main nav menu: aligin horizotaly*/
 	display: inline-block;
@@ -73,14 +74,16 @@ position: absolute;
 }
 .search-form {       /*position the search element*/
 	position: absolute;
-	right:20px;
-	bottom: 10px;
+	right:50px;
+	bottom: 0px;
 }
 .search-form img {
 	vertical-align: middle; /*position the search divider in middle of the element*/
 }
 .search-form input {        
 	border: none;
+	width: 120px
+	padding:0; 
 }
 .search-form input:focus {   /* delete the input outline*/
 	outline: none;
@@ -89,18 +92,21 @@ position: absolute;
 	margin:0;
 	padding: 2px;
 	border:1px solid #d2d2d2;
-	border-radius: 10px;
+	border-radius: 6px;
 }
 .lang-login {       /*position the lang&login element*/
 	position: absolute;
 	right: 80px;
-	top: 30px;
+	top: 0px;
+	font-size: 1.2rem;
 }
 .lang-login img {         /*position the search divider in middle of the element*/
 	vertical-align: middle;
 }
 .lang-selection {
 	text-transform: uppercase;
+	color: #585951;
+	border: none;
 }
 .customer-login::first-letter {
 	text-transform: uppercase;
@@ -116,8 +122,18 @@ lower header
 }
 .lower-header button{
 	 background-color: #2894c9;
+	 border: none;
+	 text-transform: uppercase;
+	 font-family: arial;
+	 font-size: 1.4rem;
+	 padding: 10px;
+	 border-radius: 5px;
 }
-.lower-header {
+.lower-header button img {
+	padding-left: 50px;
+}
+.lower-header { /*bg-img setting*/
+	height: 550px;
   background-image: url(images/slide-bg-complexity.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -132,17 +148,24 @@ lower header
 }
 .press {
 	text-transform: capitalize;
-	font-size: 1.5rem;
-	font-weight: 300;
+	font-size: 2rem;
+	font-weight: 100;
+	text-align: left;
 	border-radius:5px;
-	width: 190px;
-	height: 120px;
+	width:290px;
+	height: 170px;
 	padding: 0 30px 20px 10px;
 	margin-left: 50px;
-	margin-bottom: 10px; 
-
-
-
+	margin-bottom: 10px;
+}
+.press h3 {
+	font-weight: 100;
+}
+.press a {
+	font-weight: 400;
+}
+.press img {
+	vertical-align: middle;
 }
 .item1{
 	background-color: rgba(250,66,158,0.7);
@@ -155,12 +178,36 @@ background-color: rgba(104,192,56,0.9);
 	background-color: rgba(255,116,20,0.9);
 }
 
-.slide {
+.slide {      /*hding slides*/
 	display: none;
 }
-.onpageload {
+.onpageload {    /*styling the first on load page ****temporary until we get the ccs code for slider */
 	display: block;
-
+	position: relative;
+	left: 50px;
+	font-size: 2rem;
+	padding-top: 20px;
+}
+.onpageload h1 {
+	font-weight: 100;
+}
+.onpageload span {
+	font-weight: 400;
+}
+.slider-nav {
+	position: relative;
+	left: 45px;
+	top: 15px;
+}
+.slider-nav li {
+	display: inline-block;
+}
+.slider-nav div {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 2px;
+	margin-left:5px; 
 }
 
 
@@ -243,7 +290,18 @@ color: #4ea7d3;
 
 }
 
-
+/*.Shape_5_copy_11 {
+  border-radius: 6px;
+  background-color: rgb(255, 51, 153);
+  opacity: 0.902;
+  box-shadow: 0px 1px 4px 0px rgba(162, 162, 162, 0.004);
+  position: absolute;
+  left: 781px;
+  top: 444px;
+  width: 290px;
+  height: 174px;
+  z-index: 406;
+}*/
 
 	
 
