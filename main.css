@@ -1,6 +1,6 @@
 /* main css */
+/*general settings*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-
 html {
 	font-size: 62.5%;
 }
@@ -11,6 +11,7 @@ body {
 	width: 960px
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
  li{
@@ -30,26 +31,26 @@ upper header
 .upper-header{
 	font-family: "Arial";
 	padding-bottom: 10px;
+	height: 70px;
+	position: relative;		
 }
 .upper-header button{
-	background: #ffffff;
+	background: #fff;
 	border: none;
 }
-.upper-header>a {
-	margin-left: 30px;
-	margin-top:10px;
-	
+.upper-header>div {    /*aligning the Comverse logo*/
+	position: absolute;
+	bottom: 0px;
+	left: 291px;
 }
 .main-nav { /*align the main nav*/
-	position: absolute;
-	left: 300px;
-	top: 45px;
-	
+	text-align: center;
+	line-height: 15rem;	
 }
-
 .nav-tabs {        /*main nav menu: aligin horizotaly*/
 	display: inline-block;
 	text-transform: uppercase;
+	font-size: 1.4rem;
 }
 .nav-tabs .divider {
 	padding-left: 5px; 
@@ -73,7 +74,7 @@ position: absolute;
 .search-form {       /*position the search element*/
 	position: absolute;
 	right:20px;
-	top:50px
+	bottom: 10px;
 }
 .search-form img {
 	vertical-align: middle; /*position the search divider in middle of the element*/
@@ -93,7 +94,7 @@ position: absolute;
 .lang-login {       /*position the lang&login element*/
 	position: absolute;
 	right: 80px;
-	top: 20px;
+	top: 30px;
 }
 .lang-login img {         /*position the search divider in middle of the element*/
 	vertical-align: middle;
@@ -159,8 +160,6 @@ background-color: rgba(104,192,56,0.9);
 }
 .onpageload {
 	display: block;
-	margin-left: 18%;
-	padding-top: 5%;
 
 }
 
