@@ -3,15 +3,16 @@
 
 html {
 	font-size: 62.5%;
+	  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
 	font-family: "Open Sans";
 	font-weight: 100;
-	width: 960px
-	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 
  li{
@@ -19,6 +20,9 @@ body {
 }
 a:link {
     text-decoration: none;
+}
+.clearfix {
+
 }
 /*============
 upper header
@@ -30,33 +34,58 @@ upper header
 }
 .upper-header{
 	font-family: "Arial";
-	padding-bottom: 10px;
-	height: 50px;
-	position: relative;		
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 70px;
 }
 .upper-header button{
 	background: #fff;
 	border: none;
 }
-.upper-header>div {    /*aligning the Comverse logo*/
-	position: absolute;
-	bottom: 0px;
-	left: 100px;
+.left-header {
+ width: 75%;
+ 	float: left;
+}
+.logo-img {
+	float: left;
+	padding-top: 10px;
+}
+.nav-tabs>a::after {
 
-	}
-.main-nav { /*align the main nav*/
-	text-align: center;
-	line-height: 9rem;	
+	content: url(images/divider.png);
+	padding:0 5px;
+	position: relative;
+	bottom:-4px;
+	
+	     
 }
-.nav-tabs {        /*main nav menu: aligin horizotaly*/
-	display: inline-block;
+.nav-tabs:last-child>a::after {
+	display: none;
+}
+.nav-tabs:last-child>a {
+	position: relative;
+	bottom: -6px;
+}
+.main-nav {
+	margin-top: 50px;
+	margin-left: 170px;	
+	font-size: 1.5rem;	
 	text-transform: uppercase;
-	font-size: 1.4rem;
+}	
+.nav-tabs {
+	float: left;
 }
-.nav-tabs .divider {
-	padding-left: 5px; 
-	padding-right: 5px;
+.right-header {
+float: right;
+width: 18%;
+margin-top: 20px;
+padding-top: 5px;
 }
+
+
+
+
+
 .nav-tabs>a {
 	color: #585951;
 }
@@ -64,26 +93,37 @@ upper header
 	display: none;
 }
 
-.divider {            /* align the divider img  */
-	vertical-align: middle; 
-}
+
 .nav-tabs:hover .dropdown { /* show submenu when hovering*/
 display: block;
 position: absolute;
 
 }
-.search-form {       /*position the search element*/
-	position: absolute;
-	right:50px;
-	bottom: 0px;
-}
-.search-form img {
-	vertical-align: middle; /*position the search divider in middle of the element*/
-}
 .search-form input {        
 	border: none;
 	width: 120px
 	padding:0; 
+	vertical-align: 6px;
+}
+.search-form button{
+	height: 15px;
+	padding-bottom: 5px;
+
+}
+.search-form button::before {
+	content: url(images/search_line_devider.png);
+	position: relative;
+	bottom: -4px;
+	padding-right: 4px;
+	position: relative;
+	bottom: 1px; 	
+}
+.search-form button::after {
+	content: url(images/searchBtn.png);	
+	padding-left: 8px;
+	padding-bottom: 9px;
+	position: relative;
+	bottom: 5px;
 }
 .search-form input:focus {   /* delete the input outline*/
 	outline: none;
@@ -92,24 +132,30 @@ position: absolute;
 	margin:0;
 	padding: 2px;
 	border:1px solid #d2d2d2;
-	border-radius: 6px;
+	border-radius: 5px;
+	height: 25px;
 }
 .lang-login {       /*position the lang&login element*/
-	position: absolute;
-	right: 80px;
-	top: 0px;
 	font-size: 1.2rem;
+	position: relative;
+	bottom: 25px;
+
 }
-.lang-login img {         /*position the search divider in middle of the element*/
-	vertical-align: middle;
-}
+
 .lang-selection {
 	text-transform: uppercase;
 	color: #585951;
 	border: none;
+	padding-left: 0;
 }
 .customer-login::first-letter {
 	text-transform: uppercase;
+}
+.customer-login::before {
+	content: url(images/divider.png);
+	position: relative;
+	top: 4px;
+	padding-right: 8px;
 }
 
 /*===========
@@ -133,6 +179,7 @@ lower header
 	padding-left: 50px;
 }
 .lower-header { /*bg-img setting*/
+	clear: both;
 	height: 550px;
   background-image: url(images/slide-bg-complexity.jpg);
   background-repeat: no-repeat;
@@ -168,24 +215,33 @@ lower header
 	vertical-align: middle;
 }
 .item1{
-	background-color: rgba(250,66,158,0.7);
+	background-color: rgba(250,66,158,0.9);
 	margin-left: 0;
+}
+.item1:hover {
+	background-color: rgb(250,66,158);	
 }
 .item2{
 background-color: rgba(104,192,56,0.9);	
 }
+.item2:hover {
+	background-color: rgb(104,192,56);
+}
 .item3{
 	background-color: rgba(255,116,20,0.9);
+}
+.item3:hover {
+	background-color: rgb(255,116,20);
 }
 
 .slide {      /*hding slides*/
 	display: none;
 }
-.onpageload {    /*styling the first on load page ****temporary until we get the ccs code for slider */
+.onpageload {    /*styling the first on load page ****temporary until we get the cs code for slider */
 	display: block;
 	position: relative;
 	left: 50px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding-top: 20px;
 }
 .onpageload h1 {
@@ -218,7 +274,6 @@ h6{
 .solutions{
 	background: #43a2c8;
 	text-align: center;
-
 }
 .solutions,
 .solutions a,
