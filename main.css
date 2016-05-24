@@ -30,6 +30,42 @@ padding-left: 0;
 h2, footer ul{
 margin-top: 0;
 }
+h2 {
+font-size: 3rem;
+font-weight: 100;
+}
+/*===================
+buttons
+===================*/
+.lower-header button::after,
+.solutions button::after{
+	content:"";
+	display: inline-block;
+	background: url(images/btnArrow.png) no-repeat;
+	width: 10px;
+	height: 13px;
+	background-size: 100%;
+	position: absolute;
+	right: 5px;
+	top: 32%;
+}
+.lower-header button,
+.solutions button{
+	 background-color: #2894c9;
+	 border: none;
+	 
+	 font-family: arial;
+	 font-size: 1.4rem;
+	 padding: 10px 30px 10px 10px;
+	 border-radius: 5px;
+	 position: relative;
+}
+.lower-header button {
+	text-transform: uppercase;
+}
+.solutions button {
+	margin-bottom: 50px;
+}
 /*================
 grids and layouts
 ==================*/
@@ -168,36 +204,15 @@ position: absolute;
 	padding-right: 8px;
 }
 
-/*===========
+/*=================
 lower header
-=============*/
+=====================*/
 .lower-header,
 .lower-header button,
 .lower-header a{
 	color: #fff;
 }
-.lower-header button{
-	 background-color: #2894c9;
-	 border: none;
-	 text-transform: uppercase;
-	 font-family: arial;
-	 font-size: 1.4rem;
-	 padding: 10px 30px 10px 10px;
-	 border-radius: 5px;
-	 position: relative;
-}
-.lower-header button::after{
-	content:"";
-	display: inline-block;
-	background: url(images/btnArrow.png) no-repeat;
-	width: 10px;
-	height: 13px;
-	background-size: 100%;
-	position: absolute;
-	right: 5px;
-	top: 32%;
 
-}
 .lower-header { /*bg-img setting*/
 	clear: both;
 	height: 580px;
@@ -301,10 +316,19 @@ background: #2894c9;
 }
 
 
-/*solutions section*/
+/*========================
+solutions section
+==========================*/
 h6{
 	font-size: 1.7rem;
 	font-weight: 100;
+	margin-top: 0;
+}
+.solutions li:last-child a:hover; {
+	content:url(images/solution_icon_biz-transform_hover.png);
+}
+.solutions-wrapper {
+ cursor: pointer;
 }
 .solutions{
 	background: #43a2c8;
@@ -318,11 +342,16 @@ color:#fff;
 }
 .solutions button{
 	background: #3a95b5;
+	border: none;
 }
 .solutions li {
 	display: inline-block;
-	margin-left:20px; 
+	width: 16%; 
 }
+.solution section {
+ width: 100%;
+}
+
 /*events section*/
 .events {
 	background-image: url(images/news-and-events-bg.jpg);
