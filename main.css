@@ -324,8 +324,32 @@ h6{
 	font-weight: 100;
 	margin-top: 0;
 }
-.solutions li:last-child a:hover; {
-	content:url(images/solution_icon_biz-transform_hover.png);
+.solutions li img {
+	position: relative;
+	z-index: 10;
+
+}
+.solution a:hover img  {
+	position: relative;
+	z-index: 50;	
+}
+.solut1 a:hover img {
+content:url(images/solution_icon_biz-analitics_hover.png);
+}
+.solut2 a:hover img {
+content:url(images/solution_icon_diti-cx_hover.png);
+}
+.solut3 a:hover img {
+content:url(images/solution_icon_smart-money_hover.png);
+}
+.solut4 a:hover img {
+content:url(images/solution_icon_optimize-efficnt_hover.png);
+}
+.solut5 a:hover img {
+content:url(images/solution_icon_personal_hover.png);
+}
+.solut6 a:hover img {
+content:url(images/solution_icon_biz-transform_hover.png);
 }
 .solutions-wrapper {
  cursor: pointer;
