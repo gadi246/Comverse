@@ -324,10 +324,11 @@ h6{
 	font-weight: 100;
 	margin-top: 0;
 }
-.solutions li img {
+/*hovering images*/
+
+.solution img {
 	position: relative;
 	z-index: 10;
-
 }
 .solution a:hover img  {
 	position: relative;
@@ -376,9 +377,21 @@ color:#fff;
  width: 100%;
 }
 
-/*events section*/
+/*=================
+events section
+===================*/
+
 .events {
 	background-image: url(images/news-and-events-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size:cover;
+    background-attachment: fixed;
+    height: 300px;
+	text-align: center;
+}
+.events li {
+	display: inline-block;
 }
 .events a,
 .events {
@@ -387,7 +400,7 @@ color:#fff;
 .events p {
 	color: #000;
 }
-.events div {
+.event {
 	background: rgba(255,255,255,0.5);
 }
 /*success stories*/
