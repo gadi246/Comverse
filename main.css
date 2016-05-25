@@ -24,7 +24,7 @@ a:link {
 .clearfix {
 
 }
-ul {
+.ulunpaded {
 padding-left: 0;
 }
 h2, footer ul{
@@ -54,7 +54,7 @@ buttons
 	 background-color: #2894c9;
 	 border: none;
 	 
-	 font-family: arial;
+	 font-family: Arial;
 	 font-size: 1.4rem;
 	 padding: 10px 30px 10px 10px;
 	 border-radius: 5px;
@@ -73,9 +73,9 @@ grids and layouts
 	width: 960px;
 	margin: 0 auto;
 }
-.1-3-col {
-	width: 30%;
-}
+/*.1-3-col {*/
+	/*width: 30%;*/
+/*}*/
 /*============
 upper header
 ==============*/
@@ -152,7 +152,7 @@ position: absolute;
 }
 .search-form input {        
 	border: none;
-	width: 120px
+	width: 120px;
 	padding:0; 
 	vertical-align: 6px;
 }
@@ -160,10 +160,11 @@ position: absolute;
 	height: 15px;
 	padding-bottom: 5px;
 	padding-left: 0;
-	margin:0 0 0 11 ;
+	margin:0 0 0 11px ;
 	background-image: url(images/searchBtn.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
+	position: absolute;
 
 }
 .search-form button::before {
@@ -183,6 +184,7 @@ position: absolute;
 	border:1px solid #d2d2d2;
 	border-radius: 5px;
 	height: 25px;
+	position: relative;
 }
 .lang-login {       /*position the lang&login element*/
 	font-size: 1.2rem;
@@ -257,6 +259,10 @@ margin-left:3%;
 .press a:last-child {
 	font-size: 1.4rem;
 }
+.press i{
+	padding-right: 5px;
+}
+
 
 .item1{
 	background-color: rgba(250,66,158,0.9);
@@ -311,38 +317,59 @@ background: #2894c9;
 /*========================
 solutions section
 ==========================*/
-h6{
+.solutions h6{
 	font-size: 1.7rem;
 	font-weight: 100;
 	margin-top: 0;
+	text-align: center;
 }
-/*hovering images*/
+.solutions h2 {
+	text-align: center;
+}
 
-.solution img {
-	position: relative;
-	z-index: 10;
+/*bg-img for the solutions icons*/
+.solution div {
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
-.solution a:hover img  {
-	position: relative;
-	z-index: 50;	
+.solut1  div{
+	background:url(images/solution_icon_biz-analitics.png);
 }
-.solut1 a:hover img {
-content:url(images/solution_icon_biz-analitics_hover.png);
+.solut2 div{
+	background:url(images/solution_icon_diti-cx.png);
 }
-.solut2 a:hover img {
-content:url(images/solution_icon_diti-cx_hover.png);
+.solut3 div{
+	background:url(images/solution_icon_smart-money.png);
 }
-.solut3 a:hover img {
-content:url(images/solution_icon_smart-money_hover.png);
+.solut4 div{
+	background:url(images/solution_icon_optimize-efficnt.png);
 }
-.solut4 a:hover img {
-content:url(images/solution_icon_optimize-efficnt_hover.png);
+.solut5 div{
+	background:url(images/solution_icon_personal.png);
 }
-.solut5 a:hover img {
-content:url(images/solution_icon_personal_hover.png);
+.solut6 div{
+	background:url(images/solution_icon_biz-transform.png);
 }
-.solut6 a:hover img {
-content:url(images/solution_icon_biz-transform_hover.png);
+
+/*hovering images*/
+.solut1:hover div {
+background:url(images/solution_icon_biz-analitics_hover.png);
+}
+.solut2:hover div {
+background:url(images/solution_icon_diti-cx_hover.png);
+}
+.solut3:hover div {
+background:url(images/solution_icon_smart-money_hover.png);
+}
+.solut4:hover div {
+background:url(images/solution_icon_optimize-efficnt_hover.png);
+}
+.solut5:hover div {
+background:url(images/solution_icon_personal_hover.png);
+}
+.solut6:hover div {
+background:url(images/solution_icon_biz-transform_hover.png);
 }
 .solutions-wrapper {
  cursor: pointer;
@@ -350,7 +377,8 @@ content:url(images/solution_icon_biz-transform_hover.png);
 .solutions{
 	background: #43a2c8;
 	background-image: url(images/weDoBG.png);
-	text-align: center;
+	padding-bottom: 30px;
+
 }
 .solutions,
 .solutions a,
@@ -360,11 +388,17 @@ color:#fff;
 .solutions button{
 	background: #3a95b5;
 	border: none;
+	display: block;
+	margin:0 auto;
 }
 .solutions li {
 	display: inline-block;
 	width: 16%; 
 	vertical-align: top;
+	margin-left: 0.5%;
+}
+.solutions li:first-child {
+	margin-left: 0;
 }
 .solution section {
  width: 100%;
@@ -381,30 +415,98 @@ events section
 	background-size:cover;
     background-attachment: fixed;
     height: 300px;
-	text-align: center;
+
 }
 .events li {
 	display: inline-block;
+	width:31%;
+	vertical-align: top;
+	margin-left: 3%
+}
+.events li:first-child {
+	margin-left: 0;
+}
+.events h3 {
+    font-size: 2rem;
+	font-weight: 100;
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+.events h2 {
+	margin: 0 0 0 5px;
+	text-align: center;
+}
+.events article {
+	width:100%
 }
 .events a,
 .events {
 	color: #fff;
 }
+.event>a {
+    font-size: 1.4rem;
+	text-transform: capitalize;
+}
+.event>a i {
+	padding-right: 5px;
+}
+.event>a:hover {
+	color: black;
+}
 .events p {
 	color: #000;
-}
-.event {
+	text-align: left;}
+.event-wrapper { /* the semi white box*/
 	background: rgba(255,255,255,0.5);
+	font-size: 1.5rem;
+	padding: 10px;
+	height: 160px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+
 }
-/*success stories*/
+.event-wrapper>div {/* the light blue box*/
+float: left;
+background-color: #43a2c8;
+font-size: 2rem;
+font-weight: bold;
+border-radius: 1px;
+padding: 10px 0px;
+width:30%;
+margin: 5px 5px 0 5px;
+	text-align: center;
+}
+.event-wrapper>div>div:first-of-type {
+	font-size: 5.5rem;
+	border-bottom: 1px dotted #fff;
+
+}
+
+/*====================
+success stories
+======================*/
 .stories {
 	background: #ececec;
 	color: #585951;
 }
+.stories h2 {
+	text-align: center;
+}
 .stories button {
 	color: #fff;
 	background: #2894c9;
-
+	display: block;
+	margin: 0 auto;
+}
+.wide {
+	width: 35%;
+}
+.narrow {
+	width: 25%;
+}
+.col1 li:not(:first-child),
+.col2 li:not(:last-child){
+	float: left;
 }
 .stories li:first-child,
 .stories li:nth-child(8),
