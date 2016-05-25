@@ -257,15 +257,7 @@ margin-left:3%;
 .press a:last-child {
 	font-size: 1.4rem;
 }
-.press a:last-child::before {
-	content:"";
-	display: inline-block;
-	background: url(images/link-icon-image.png) no-repeat;
-	width: 20px;
-	height: 20px;
-	background-size: 100%;
-	vertical-align: bottom;
-}
+
 .item1{
 	background-color: rgba(250,66,158,0.9);
 	
@@ -372,6 +364,7 @@ color:#fff;
 .solutions li {
 	display: inline-block;
 	width: 16%; 
+	vertical-align: top;
 }
 .solution section {
  width: 100%;
