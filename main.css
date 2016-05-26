@@ -518,19 +518,35 @@ success stories
 .stories article {
 	background: #fff;
 }
-/*section's grid columns and sub grid */
+/*====aligning the section====/*
+/*section's grid 3 columns*/
 .stories .col35 {
 	width:35%;
 }
 .stories .col25 {
 	width:25%;
 }
+/*columns articles' layout*/
 .left-story li:not(:first-child),
 .middle-story li:not(last-child),
 .col25 li:not(:first-child),
-.col25, .col35{
+/*align the section 3 columns*/
+.col25, .col35,
+/*float left the 2 big articles' clients picture */
+.abstract>div>img {
 	float: left;
 }
+/* float left the 2 big articles' clients title&link*/
+.abstract div:last-of-type {
+	display: inline;
+	float: left;
+}
+/*float right the  2 big articles' clients company's link*/
+.abstract > a {
+	float: right;
+}
+
+
 	/*footer*/
 footer {
 	background: #000;
