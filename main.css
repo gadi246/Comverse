@@ -21,8 +21,20 @@ body {
 a:link {
     text-decoration: none;
 }
+/*============
+clearfix
+==============*/
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
 .clearfix {
-
+	clear: both;
+	*zoom: 1;
 }
 .ulunpaded {
 padding-left: 0;
@@ -465,6 +477,11 @@ events section
 	margin-bottom: 10px;
 
 }
+/*hovering the events*/
+.event-wrapper:hover {
+	background: rgb(255,255,255);
+	cursor: pointer;
+}
 .event-wrapper>div {/* the light blue box*/
 float: left;
 background-color: #43a2c8;
@@ -498,23 +515,23 @@ success stories
 	display: block;
 	margin: 0 auto;
 }
-.wide {
-	width: 35%;
+.stories article {
+	background: #fff;
 }
-.narrow {
-	width: 25%;
+/*section's grid columns and sub grid */
+.stories .col35 {
+	width:35%;
 }
-.col1 li:not(:first-child),
-.col2 li:not(:last-child){
+.stories .col25 {
+	width:25%;
+}
+.left-story li:not(:first-child),
+.middle-story li:not(last-child),
+.col25 li:not(:first-child),
+.col25, .col35{
 	float: left;
 }
-.stories li:first-child,
-.stories li:nth-child(8),
-.stories li:nth-child(9){
-	background: #fff;
-	margin: 10px 0 10px 0;
-}
-/*footer*/
+	/*footer*/
 footer {
 	background: #000;
 }
