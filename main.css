@@ -520,18 +520,18 @@ success stories
 }
 /*====aligning the section====/*
 /*section's grid 3 columns*/
-.stories .col35 {
-	width:35%;
+.stories .col-wide {
+	width:37%;
 }
-.stories .col25 {
-	width:25%;
+.stories .col-narrow {
+	width:24%;
 }
 /*columns articles' layout*/
 .left-story li:not(:first-child),
 .middle-story li:not(last-child),
-.col25 li:not(:first-child),
+.col-narrow li:not(:first-child),
 /*align the section 3 columns*/
-.col25, .col35,
+.col-narrow, .col-wide,
 /*float left the 2 big articles' clients picture */
 .abstract>div>img {
 	float: left;
@@ -545,6 +545,24 @@ success stories
 .abstract > a {
 	float: right;
 }
+.col-wide {
+margin-right: 1%;
+}
+
+.left-story li:not(:first-child){
+	margin-left: 2.4% ;
+	width: 31.7%;
+}
+
+.left-story li:nth-child(2){
+	margin-left: 0;
+}
+.left-story li:first-child {
+	height: 60%;
+	margin-bottom: 3%;
+}
+
+
 
 
 	/*footer*/
