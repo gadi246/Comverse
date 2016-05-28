@@ -254,7 +254,7 @@ lower header
 }
 
 .lower-header { /*bg-img setting*/
-    height: 580px;
+    height: 540px;
     position: relative;
 }
 .press-wrapper {
@@ -622,18 +622,24 @@ success stories
 
 .stories article {
     background: #fff;
-}
 
+}
 /*====aligning the section====/*
-/*section's grid 3 columns*/
+/*section's grid 3 columns&spacing*/
 .stories .col-wide {
-    width: 37%;
+    width: 36.5%;
 }
 
 .stories .col-narrow {
-    width: 24%;
+    width: 24.2%;
+}
+.col-wide {
+    margin-right: 1%;
 }
 
+/*==========
+    FLOATS
+ ===========*/
 /*columns articles' layout*/
 .left-story li:not(:first-child),
 .middle-story li:not(last-child),
@@ -641,69 +647,95 @@ success stories
     /*align the section 3 columns*/
 .col-narrow, .col-wide,
     /*float left the 2 big articles' clients picture */
-.abstract > div > img {
+.abstract>div>img {
     float: left;
 }
-
 /* float left the 2 big articles' clients title&link*/
 .abstract div:last-of-type,
 .col-narrow article div:last-of-type {
     display: inline;
     float: left;
 }
-
 /*float right the  2 big articles' clients company's link*/
 .abstract > a,
 .col-narrow article > a {
     float: right;
 }
 
-/*spacing articles&columns*/
-.col-wide {
-    margin-right: 1%;
-}
+/*===spacing articles&columns===*/
 
+/*measures&margin for left and middle columns small articles*/
+.middle-story li:not(:last-child),
 .left-story li:not(:first-child) {
-    margin-left: 8px;
-    width: 112px;
+    margin-left: 10px;
+    width:31.4%;
 }
-
-.middle-story li:not(:last-child) {
-    margin-left: 8px;
-    width: 112px;
+/*same for the narrow column*/
+.col-narrow li:last-child,
+.col-narrow li:nth-child(2){
+    width:47.8%;
+    background: #fff;
 }
-
+/*margin for the last small article in the narrow column*/
+.col-narrow li:last-child {
+    margin-left: 10px;
+}
+/*zero margin for the left side aricles*/
 .middle-story li:first-child,
 .middle-story li:last-child,
 .left-story li:nth-child(2) {
     margin-left: 0;
 }
-
+/*margin bottom/top for the big articles*/
+.col-narrow li:first-child,
 .left-story li:first-child {
-    margin-bottom: 3%;
-    padding-right: 4px;
+    margin-bottom: 10px;
 }
-
 .middle-story li:last-child {
-    padding-right: 4px;
+    margin-top: 10px;
+}
+.stories blockquote {
+    font-size: 1.6rem;
+}
+/*spacing&styling inside the articles*/
+/*quote img*/
+.stories blockquote::before {
+    content: url(images/quote-grey.png);
+    margin: 0 10px;
+}
+/*styling the divider border and spacing*/
+
+.middle-story .abstract div:first-child,
+.left-story .abstract div:first-child {
+   border-bottom: 1px solid #ddd;
+   padding-top: 14px;
+   margin-bottom: 10px;
+}
+/*marging between the quote and the client img*/
+.abstract>div>img {
+    margin-right: 18px;
+}
+/*font size of the quote text*/
+.col-narrow li:first-child div + div,
+.abstract div + div {
+    font-size: 1.3rem;
+}
+/*margin of the quote*/
+.col-narrow blockquote {
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+/*border andmargin of the div of the quote*/
+.col-narrow article div:first-child {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+/*padding of the article to get the bottom-border shorter*/
+.abstract,
+.col-narrow li:first-child article{
+    padding: 0 14px;
 }
 
-.middle-story li:last-child {
-    margin-top: 8px;
-}
-
-.col-narrow li:first-child {
-    height: 155px;
-}
-
-.col-narrow li:not(:first-child) {
-    width: 112px;
-    margin-top: 3px;
-}
-
-.col-narrow li:last-child {
-    margin-left: 6px;
-}
 
 /*footer*/
 footer {
@@ -736,18 +768,7 @@ small {
     color: #fff;
 }
 
-/*.Shape_5_copy_11 {
-  border-radius: 6px;
-  background-color: rgb(255, 51, 153);
-  opacity: 0.902;
-  box-shadow: 0px 1px 4px 0px rgba(162, 162, 162, 0.004);
-  position: absolute;
-  left: 781px;
-  top: 444px;
-  width: 290px;
-  height: 174px;
-  z-index: 406;
-}*/
+
 
 	
 
