@@ -58,6 +58,7 @@ h2 {
 /*===================
 buttons
 ===================*/
+.stories button::after,
 .lower-header button::after,
 .solutions button::after {
     content: "";
@@ -70,7 +71,7 @@ buttons
     right: 5px;
     top: 32%;
 }
-
+.stories button,
 .lower-header button,
 .solutions button {
     background-color: #2894c9;
@@ -86,10 +87,17 @@ buttons
 .lower-header button {
     text-transform: uppercase;
 }
-
+ .stories button,
 .solutions button {
-    margin-bottom: 50px;
-}
+     color: #fff;
+    background: #3a95b5;
+    border: none;
+    display: block;
+    margin: 0 auto;
+ }
+ .stories button {
+     margin-top: 50px;
+ }
 
 /*================
 grids and layouts
@@ -482,10 +490,7 @@ solutions section
 }
 
 .solutions button {
-    background: #3a95b5;
-    border: none;
-    display: block;
-    margin: 0 auto;
+
 }
 
 .solutions li {
@@ -607,19 +612,12 @@ success stories
 .stories {
     background: #ececec;
     color: #585951;
+    padding-bottom: 50px;
 }
 
 .stories h2 {
     text-align: center;
 }
-
-.stories button {
-    color: #fff;
-    background: #2894c9;
-    display: block;
-    margin: 0 auto;
-}
-
 .stories article {
     background: #fff;
 
@@ -735,6 +733,14 @@ success stories
 .col-narrow li:first-child article{
     padding: 0 14px;
 }
+.stories article,
+.stories li img,
+.stories li{
+  border-radius: 5px;
+}
+
+
+
 
 
 /*footer*/
