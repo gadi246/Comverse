@@ -622,6 +622,9 @@ success stories
     background: #fff;
 
 }
+.col-narrow, .col-wide {
+    cursor: pointer;
+}
 /*====aligning the section====/*
 /*section's grid 3 columns&spacing*/
 .stories .col-wide {
@@ -748,28 +751,28 @@ success stories
 .hidden-quote {
     display: none;
 }
-.small-abstract:hover + .hidden-quote,
-.abstract:hover + .hidden-quote {
+.container-narrow:hover .hidden-quote,
+.container-wide:hover  .hidden-quote {
     display: block;
     padding: 24px;
     font-size: 1.6rem;
     background: #3aa6db;
     color: #fff;
 }
-.small-abstract:hover + .hidden-quote {
+.container-narrow:hover  .hidden-quote {
     padding-bottom: 157px ;
     padding-top: 23px;
     font-size: 1.5rem;
 }
 
-.small-abstract:hover + .hidden-quote::before,
-.abstract:hover + .hidden-quote::before,
-.abstract:hover + .hidden-quote::after {
+.container-narrow:hover  .hidden-quote::before,
+.container-wide:hover  .hidden-quote::before,
+.container-wide:hover  .hidden-quote::after {
     content: url(images/quote-blue.png);
     margin: 0 10px;
 }
-.small-abstract:hover,
-.abstract:hover {
+.container-narrow:hover .small-abstract,
+.container-wide:hover .abstract {
     display: none;
 }
 
