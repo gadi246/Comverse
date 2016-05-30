@@ -113,9 +113,10 @@ grids and layouts
 upper header
 ==============*/
 
-.upper-header li,
+
+.nav-tabs  a,
 .lang,
-.upper-header button {
+.customer-login {
     color: #585951;
 }
 
@@ -123,6 +124,8 @@ upper header
     font-family: "Arial";
     margin: 0 auto;
     padding-bottom: 70px;
+    position: relative;
+    height: 76px ;
 }
 
 .upper-header button {
@@ -154,8 +157,8 @@ upper header
 }
 
 .nav-tabs:last-child > a {
-    position: relative;
     bottom: -6px;
+    position: relative;
 }
 
 .main-nav {
@@ -164,11 +167,6 @@ upper header
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-
-.nav-tabs {
-    float: left;
-}
-
 .right-header {
     float: right;
     width: 18%;
@@ -176,19 +174,54 @@ upper header
     padding-top: 5px;
 }
 
-.nav-tabs > a {
-    color: #585951;
+/*===mega menu design====*/
+.main-nav>ul>li {
+    float: left;
 }
 
-.dropdown { /*hide sub menu of the main menu*/
+.nav-tabs:hover,
+.nav-tabs:focus {
+    border-top:1px solid silver ;
+    border-right:1px solid silver;
+    border-left: 1px solid silver ;
+
+
+}
+.main-nav ul .dropdown {
     display: none;
-}
-
-.nav-tabs:hover .dropdown { /* show submenu when hovering*/
-    display: block;
     position: absolute;
+    top:74px;
+    left:0;
+    background: #fff;
+    border: 1px solid silver;
+    width: 100%;
+    height: 300px;
+}
+.mega-divider {
+    background: url(images/line_divider_video.png);
+    height: 174px;
+    width: 3px;
+    position: absolute;
+    top: 20px;
+    right: 32%;
 
 }
+.mega-img {
+    background: url(images/Megamenu_Your_Needs_eBook.jpg) no-repeat;
+    height: 174px;
+    width: 25%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.main-nav li:hover > ul {
+    display: block;
+
+}
+
+
+
+    /*end of megamenu*/
 
 .search-form input {
     border: none;
@@ -345,7 +378,7 @@ lower header
     background-color: rgb(255, 116, 20);
 }
 
-ul {
+.lower-header ul {
     height: 100%;
 }
 
