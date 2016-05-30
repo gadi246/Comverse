@@ -263,7 +263,7 @@ lower header
 }
 
 .lower-header { /*bg-img setting*/
-    height: 540px;
+    height: 570px;
 
 }
 
@@ -350,13 +350,7 @@ ul {
 }
 
 /*WTFFFFF*/
-/*.onpageload h1 {*/
-/*font-weight: 100;*/
-/*}*/
 
-/*.onpageload span {*/
-/*font-weight: 400;*/
-/*}*/
 
 /*layout setting for the slides*/
 
@@ -372,6 +366,13 @@ ul {
     font-size: 1.7rem;
     padding-top: 20px;
     height: 100%;
+}
+.slide h1 {
+    font-weight: 100;
+}
+
+.slide span {
+    font-weight: 400;
 }
 
 .onpageload {
@@ -389,18 +390,30 @@ ul {
 #monetize:target {
     background-image: url(images/smartly-monetize.jpg);
     display: block;
-
+}
+#monetize:target li,
+#fourg:target li
+{
+    list-style: circle;
+    line-height: 10px;
 }
 
 #fourg:target {
     background: url(images/evolve-to-ip4g.jpg);
     display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-attachment: fixed;
+
 
 }
 
 #digital:target {
     background: url(images/digital-services.png);
     display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-attachment: fixed;
 
 }
 #monetize:target ~ .onpageload,
