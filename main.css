@@ -220,6 +220,7 @@ upper header
 
 .search-form input:focus { /* delete the input outline*/
     outline: none;
+
 }
 
 .search-form fieldset { /* adding an outline round whole element*/
@@ -401,6 +402,11 @@ ul {
     background: url(images/digital-services.png);
     display: block;
 
+}
+#monetize:target ~ .onpageload,
+#fourg:target ~ .onpageload,
+#digital:target ~ .onpageload {
+    display: none;
 }
 
 
