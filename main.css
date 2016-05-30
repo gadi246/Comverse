@@ -265,18 +265,19 @@ lower header
     height: 540px;
 
 }
-/*positioning th press section*/
+
+/*positioning the press section*/
 .relative-press-wrapper {
     position: relative;
 }
+
 .press-wrapper {
     margin-top: 5%;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     bottom: 24px;
 
 }
-
 
 .press-wrapper li {
     display: inline-block;
@@ -343,81 +344,83 @@ lower header
     background-color: rgb(255, 116, 20);
 }
 
-/*====== slide show=====*/
-.slide { /*hiding slides*/
-    display: none;
-}
-
 ul {
     height: 100%;
 }
 
-.onpageload {
-    background-image: url(images/slide-bg-complexity.jpg);
-    display: block;
+/*WTFFFFF*/
+/*.onpageload h1 {*/
+/*font-weight: 100;*/
+/*}*/
+
+/*.onpageload span {*/
+/*font-weight: 400;*/
+/*}*/
+
+/*layout setting for the slides*/
+
+.slide {
+    display: none;
+}
+
+.slide {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-attachment: fixed;
     padding-bottom: 30px;
-    display: block;
     font-size: 1.7rem;
     padding-top: 20px;
     height: 100%;
 }
 
-.onpageload h1 {
-    font-weight: 100;
-}
-
-.onpageload span {
-    font-weight: 400;
-}
-
-:target {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-attachment: fixed;
-    padding-bottom: 30px;
+.onpageload {
     display: block;
-    font-size: 1.7rem;
-    padding-top: 20px;
-}
+    background-image: url(images/slide-bg-complexity.jpg);
 
-:target h1 {
-    font-weight: 100;
-}
-
-:target span {
-    font-weight: 400;
 }
 
 #free:target {
+    display: block;
     background-image: url(images/slide-bg-complexity.jpg);
+
 }
 
 #monetize:target {
     background-image: url(images/smartly-monetize.jpg);
+    display: block;
+
 }
 
-#4g:target {
-    background-image: url(images/evolve-to-ip4g.jpg);
+#fourg:target {
+    background: url(images/evolve-to-ip4g.jpg);
+    display: block;
+
 }
 
 #digital:target {
-    background-image: url(images/digital-services.jpg);
+    background: url(images/digital-services.png);
+    display: block;
+
 }
+
+
+/*======slide show=dfd====*/
+
 /*===slider bullets navigator===*/
 .slider-nav-wrapper {
     position: relative;
 }
+
 .slider-nav {
     position: absolute;
     bottom: 258px;
 }
+
 /*fixing the left margin offset*/
 .slider-nav li:first-child div {
     margin-left: 2px;
 }
+
 .slider-nav li {
     display: inline-block;
 
@@ -841,6 +844,7 @@ success stories
     font-size: 1.3rem;
     line-height: 24px;
 }
+
 .feature-box {
     width: 28%;
     text-align: center;
@@ -848,23 +852,28 @@ success stories
     height: 300px;
 
 }
+
 .feature-box article {
     margin: 15px;
     height: 50%;
 }
-.feature-box>article>p {
+
+.feature-box > article > p {
     font-size: 1.8rem;
     text-align: left;
     line-height: 27px;
 }
+
 .feature-box h2,
-.feature-box label{
+.feature-box label {
     text-transform: uppercase;
     font-size: 1.8rem;
 }
+
 .feature-box p {
     color: #fff;
 }
+
 .date-footer {
     display: inline-block;
     float: left;
@@ -872,12 +881,14 @@ success stories
     margin-right: 10px;
     margin-top: 11px;
 }
+
 .date-footer p:first-child {
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 5rem;
 
 }
+
 .date-footer p:last-child {
     font-size: 3rem;
     margin-bottom: 0;
@@ -910,16 +921,17 @@ small {
     position: relative;
 }
 
-.feature-box h2{
+.feature-box h2 {
     color: #4ea7d3;
 }
 
 .feature-box input {
     border-radius: 3px;
     border: none;
-    padding:0 2px 2px 2px;
+    padding: 0 2px 2px 2px;
 
 }
+
 .feature-box button {
     display: inline-block;
     vertical-align: middle;
@@ -929,12 +941,14 @@ small {
     border-radius: 3px;
     padding: 2px 15px;
 }
+
 .feature-box span {
     background: #fff;
     padding-top: 5px;
     padding-bottom: 8px;
     border-radius: 3px;
 }
+
 /*social-nav &hovering*/
 .social-nav {
     cursor: pointer;
@@ -943,23 +957,28 @@ small {
     bottom: 0;
 
 }
+
 .social-nav ul {
 
 }
+
 .social-nav li {
     width: 22px;
     height: 22px;
-     display: inline-block;
+    display: inline-block;
     padding: 0;
     margin-left: 10px;
 
 }
+
 .youtube:hover {
     content: url(images/socialMenuIcon-youtube_hover.png);
 }
+
 .twitter:hover {
     content: url(images/socialMenuIcon-twitter_hover.png);
 }
+
 .linkedin:hover {
     content: url(images/socialMenuIcon-linkdin_hover.png);
 }
