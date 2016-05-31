@@ -224,7 +224,7 @@ upper header
 .about {
     background: url(images/Megamenu_About_Comverse_by_the_numbers.jpg);
 }
-.main-nav li:hover > ul {
+.nav-tabs:hover > ul {
     display: block;
 
 }
