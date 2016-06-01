@@ -166,13 +166,17 @@ upper header
     margin-top: 34px;
     padding-top: 5px;
 }
-/*padding for the mega-menu style and spacing*/
+
+
+/*===mega menu design====*/
+/*padding for the mega-menu li's for style and spacing*/
 .nav-tabs {
     padding-bottom: 11px;
 }
-
-/*===mega menu design====*/
-.main-nav>ul>li {
+.nav-tabs:last-child {
+    padding-bottom: 17px;
+}
+.nav-tabs {
     float: left;
 }
 
@@ -180,31 +184,28 @@ upper header
 .nav-tabs:focus {
     border-top:1px solid silver ;
     border-right:1px solid silver;
-    border-left: 1px solid silver ;
-
-
 }
-.main-nav ul .dropdown {
+ .dropdown {
     display: none;
     position: absolute;
     top:100px;
     left:0;
     background: #fff;
-    border: 1px solid silver;
     width: 100%;
-    height: 214px;
+    height: 234px;
+     z-index: 100;
 }
 .mega-divider {
     background: url(images/line_divider_video.png);
-    height: 174px;
-    width: 3px;
+    height: 196px;
+    width: 1px;
     position: absolute;
     top: 20px;
-    right: 32%;
+    right: 35%;
 }
 .mega-img {
-    height: 174px;
-    width: 25%;
+    height: 196px;
+    width: 31%;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -212,7 +213,7 @@ upper header
 .needs {
     background: url(images/Megamenu_Your_Needs_eBook.jpg) no-repeat;    
 }
-.portfolio {
+.portfolio-img {
     background: url(images/megamenu_digital_lifestyle.jpg);
 }
 .news {
@@ -221,6 +222,32 @@ upper header
 .about {
     background: url(images/Megamenu_About_Comverse_by_the_numbers.jpg);
 }
+/*dropdown menu column style*/
+.dropdown-column {
+    float: left;
+    margin-top: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+    font-size: 1.5rem ;
+}
+/*specific style for our portfolio*/
+.dropdown-column:nth-child(2){
+    margin-left: 100px;
+}
+.portfolio {
+    height: 280px;
+}
+.portfolio .dropdown-column:nth-child(2) {
+margin-left: 40px;
+}
+.portfolio  .dropdown-column li:first-child a,
+.portfolio  .dropdown-column li:nth-child(10) a,
+.portfolio .dropdown-column:nth-child(2) li:nth-child(6) a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
 .nav-tabs:hover > ul {
     display: block;
 
