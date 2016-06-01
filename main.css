@@ -166,6 +166,10 @@ upper header
     margin-top: 34px;
     padding-top: 5px;
 }
+/*padding for the mega-menu style and spacing*/
+.nav-tabs {
+    padding-bottom: 11px;
+}
 
 /*===mega menu design====*/
 .main-nav>ul>li {
@@ -183,7 +187,7 @@ upper header
 .main-nav ul .dropdown {
     display: none;
     position: absolute;
-    top:74px;
+    top:100px;
     left:0;
     background: #fff;
     border: 1px solid silver;
