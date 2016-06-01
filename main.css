@@ -132,15 +132,9 @@ upper header
     background: #fff;
     border: none;
 }
-
-.left-header {
-    width: 75%;
-    float: left;
-}
-
 .logo-img {
     float: left;
-    padding-top: 10px;
+    padding-top: 24px;
 }
 
 .nav-tabs > a::after {
@@ -149,7 +143,6 @@ upper header
     padding: 0 5px;
     position: relative;
     bottom: -4px;
-
 }
 
 .nav-tabs:last-child > a::after {
@@ -163,14 +156,14 @@ upper header
 
 .main-nav {
     margin-top: 50px;
-    margin-left: 210px;
+    margin-left: 22px;
     font-size: 1.5rem;
     text-transform: uppercase;
+    float: left;
 }
 .right-header {
     float: right;
-    width: 18%;
-    margin-top: 20px;
+    margin-top: 34px;
     padding-top: 5px;
 }
 
@@ -235,9 +228,9 @@ upper header
 
 .search-form input {
     border: none;
-    width: 120px;
+    width: 107px;
     padding: 0;
-    vertical-align: 6px;
+    vertical-align: top;
 }
 
 .search-form button {
@@ -248,7 +241,7 @@ upper header
     background-image: url(images/searchBtn.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-    position: absolute;
+
 
 }
 
@@ -388,8 +381,9 @@ lower header
     background-color: rgb(255, 116, 20);
 }
 
-.lower-header ul {
+.lower-header > ul {
     height: 100%;
+    margin-top: 0;
 }
 
 /*WTFFFFF*/
