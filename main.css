@@ -246,15 +246,12 @@ margin-left: 40px;
     color: blue;
     text-decoration: underline;
 }
-
+/* hover the main tabs*/
 
 .nav-tabs:hover > ul {
     display: block;
 
 }
-
-
-
     /*end of megamenu*/
 
 .search-form input {
@@ -437,6 +434,7 @@ lower header
 }
 .slide h1 {
     font-weight: 100;
+    text-transform: capitalize;
 }
 
 .slide span {
