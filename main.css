@@ -830,7 +830,8 @@ success stories
 
 /*spacing&styling inside the articles*/
 /*quote img*/
-.stories blockquote::before {
+.abstract blockquote::before,
+.small-abstract blockquote::before{
     content: url(images/quote-grey.png);
     margin: 0 10px;
 }
@@ -894,28 +895,40 @@ success stories
 .container-narrow:hover .hidden-quote,
 .container-wide:hover .hidden-quote {
     display: block;
-    padding: 24px;
+    padding: 23px;
     font-size: 1.6rem;
     background: #3aa6db;
     color: #fff;
 }
 
 .container-narrow:hover .hidden-quote {
-    padding-bottom: 157px;
+    padding-bottom: 187px;
     padding-top: 23px;
     font-size: 1.5rem;
 }
 
-.container-narrow:hover .hidden-quote::before,
-.container-wide:hover .hidden-quote::before,
-.container-wide:hover .hidden-quote::after {
+.container-narrow:hover .hidden-quote blockquote::before,
+.container-wide:hover .hidden-quote blockquote::before,
+.container-wide:hover .hidden-quote blockquote::after {
     content: url(images/quote-blue.png);
     margin: 0 10px;
+}
+.container-narrow:hover .hidden-quote blockquote,
+.container-wide:hover .hidden-quote blockquote {
+    margin-top:0;
+    margin-bottom: 0;
+}
+.container-narrow:hover .hidden-quote blockquote {
+    margin-right: 32px;
 }
 
 .container-narrow:hover .small-abstract,
 .container-wide:hover .abstract {
     display: none;
+}
+.container-narrow:hover .hidden-quote,
+.container-wide:hover .hidden-quote {
+    display: block;
 }
 
 /*================
