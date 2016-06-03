@@ -891,7 +891,7 @@ success stories
 .hidden-quote {
     display: none;
 }
-
+/*styling the quote container*/
 .container-narrow:hover .hidden-quote,
 .container-wide:hover .hidden-quote {
     display: block;
@@ -906,7 +906,7 @@ success stories
     padding-top: 23px;
     font-size: 1.5rem;
 }
-
+/*styling the quote imges*/
 .container-narrow:hover .hidden-quote blockquote::before,
 .container-wide:hover .hidden-quote blockquote::before,
 .container-wide:hover .hidden-quote blockquote::after {
@@ -921,7 +921,7 @@ success stories
 .container-narrow:hover .hidden-quote blockquote {
     margin-right: 32px;
 }
-
+/*displaying and undisplaying*/
 .container-narrow:hover .small-abstract,
 .container-wide:hover .abstract {
     display: none;
@@ -947,13 +947,14 @@ success stories
     width: 28%;
     text-align: center;
     position: relative;
-    height: 300px;
+    height: 350px;
 
 }
 
 .feature-box article {
     margin: 15px;
     height: 50%;
+    border-bottom: 1px solid #fff   ;
 }
 
 .feature-box > article > p {
@@ -1011,7 +1012,8 @@ footer li:first-child {
 }
 
 small {
-    color: #585951;
+    color: #D8D8D8;
+    font-size: 1.4rem;
 }
 
 .feature-box {
@@ -1058,7 +1060,7 @@ small {
 }
 
 .social-nav ul {
-
+margin-right: 0;
 }
 
 .social-nav li {
