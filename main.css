@@ -880,56 +880,83 @@ success stories
     border-radius: 5px;
 }
 
-/*hovering the small articles*/
-.small-story:hover {
+/*====hovering the small articles====*/
+/*styling the hidden small articel*/
+.small-story-hidden {
     content: url(images/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
     width: 100%;
     height: 100%;
 }
-
-/*hovering the big articles*/
-.hidden-quote {
-    display: none;
+/*animation small articles*/
+.container-video {
+    position: relative;
+    overflow:hidden;
 }
+.small-story {
+    position: absolute;
+    top:0;
+    transition:all 500ms ease-in-out;
+    width: 100%;
+}
+.container-video:hover .small-story {
+    top: -100%;
+
+}
+
+/*===hovering the big articles===*/
+
 /*styling the quote container*/
-.container-narrow:hover .hidden-quote,
-.container-wide:hover .hidden-quote {
-    display: block;
+
+.container-wide .hidden-quote {
     padding: 23px;
     font-size: 1.6rem;
     background: #3aa6db;
     color: #fff;
 }
 
-.container-narrow:hover .hidden-quote {
-    padding-bottom: 187px;
+.container-narrow .hidden-quote {
+
     padding-top: 23px;
     font-size: 1.5rem;
+    background: #3aa6db;
+    color: #fff;
+    height: 210px; /*why does  it have to have height?*/
 }
-/*styling the quote imges*/
-.container-narrow:hover .hidden-quote blockquote::before,
-.container-wide:hover .hidden-quote blockquote::before,
-.container-wide:hover .hidden-quote blockquote::after {
+/*styling the quote images*/
+.container-narrow .hidden-quote blockquote::before,
+.container-wide .hidden-quote blockquote::before,
+.container-wide .hidden-quote blockquote::after {
     content: url(images/quote-blue.png);
     margin: 0 10px;
 }
-.container-narrow:hover .hidden-quote blockquote,
-.container-wide:hover .hidden-quote blockquote {
+.container-narrow .hidden-quote blockquote,
+.container-wide .hidden-quote blockquote {
     margin-top:0;
     margin-bottom: 0;
 }
-.container-narrow:hover .hidden-quote blockquote {
+.container-narrow .hidden-quote blockquote {
     margin-right: 32px;
+    padding-top: 23px;
 }
-/*displaying and undisplaying*/
-.container-narrow:hover .small-abstract,
-.container-wide:hover .abstract {
-    display: none;
+/*animation big articles*/
+.abstract,
+.small-abstract {
+    position: absolute;
+    top:0;
+    transition:all 500ms ease-in-out;
 }
-.container-narrow:hover .hidden-quote,
-.container-wide:hover .hidden-quote {
-    display: block;
+.container-wide,
+.container-narrow {
+    position: relative;
+    overflow:hidden;
 }
+.container-wide:hover .abstract,
+.container-narrow:hover .small-abstract {
+    top: -100%;
+}
+
+
+
 
 /*================
       footer
