@@ -123,9 +123,9 @@ upper header
 .upper-header {
     font-family: "Arial";
     margin: 0 auto;
-    padding-bottom: 70px;
     position: relative;
-    height: 76px ;
+    height: 99px;
+    top:2px;/*for the mega menu to appear below the header*/
 }
 
 .upper-header button {
@@ -174,8 +174,10 @@ upper header
 .nav-tabs>a {
     display: block;
 }
+/*fucking hack of white shadow to make the tabs look as one*/
 .nav-tabs:hover>a {
     color: blue;
+    box-shadow: 0px 15px 0px 9px rgba(255,255,255,1);
 }
 .nav-tabs {
     padding-bottom: 11px;
@@ -186,12 +188,23 @@ upper header
 .nav-tabs {
     float: left;
 }
-
-.nav-tabs:hover,
+/*borders and padding when hovering the tabs*/
+.nav-tabs:hover ,
 .nav-tabs:focus {
     border-top:1px solid silver ;
     border-right:1px solid silver;
     border-left:  1px solid silver;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-left: 9px;
+}
+.nav-tabs:last-child:hover {
+    padding: 0 9px 11px 9px;
+}
+/*hidding the dividers when hovering*/
+.nav-tabs:hover a::after,
+.nav-tabs:hover a::before {
+    display: none;
 }
  .dropdown {
     display: none;
@@ -256,11 +269,12 @@ margin-left: 40px;
 }
 /* hover the main tabs*/
 
+
 .nav-tabs:hover > ul {
     display: block;
 
 }
-    /*end of megamenu*/
+/*====end of mega-menu====*/
 
 .search-form input {
     border: none;
@@ -278,8 +292,6 @@ margin-left: 40px;
     background-image: url(images/searchBtn.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-
-
 }
 
 .search-form button::before {
@@ -1135,6 +1147,7 @@ margin-right: 0;
     position: absolute;
     top: -30px;
     left:0;
+
 }
 
 
