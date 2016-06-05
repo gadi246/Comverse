@@ -155,15 +155,15 @@ upper header
 }
 
 .main-nav {
-    margin-top: 50px;
-    margin-left: 22px;
+    margin-top: 5.2%;
+    margin-left: 2%;
     font-size: 1.5rem;
     text-transform: uppercase;
     float: left;
 }
 .right-header {
     float: right;
-    margin-top: 34px;
+    margin-top: 10px;
     padding-top: 5px;
 }
 
@@ -292,6 +292,8 @@ margin-left: 40px;
     background-image: url(images/searchBtn.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+    position: absolute;
+    right: 0%;
 }
 
 .search-form button::before {
@@ -319,8 +321,7 @@ margin-left: 40px;
 
 .lang-login { /*position the lang&login element*/
     font-size: 1.2rem;
-    position: relative;
-    bottom: 25px;
+    margin-bottom: 25px;
 
 }
 
@@ -1167,10 +1168,32 @@ margin-right: 0;
    responsive design
 =======================*/
 
-   /*====mobile size===*/
+   /*====medium size===*/
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 959px) and (min-width: 767px) {
     /*=====upper-header====*/
+      .grid {
+          width: 95%;
+      }
+    .logo-img img {
+          content: url(images/comverse-logo-medium.png);
+      }
+    .logo-img {
+        padding-top: 50px;
+    }
+      .main-nav {
+          font-size: 1.3rem;
+          margin-top: 52px;
+      }
+    .nav-tabs:last-child > a {
+        bottom: -8px;
+    }
+    
+
+
+      footer .grid *:not(small){
+          display: none;
+      }
 
 
 
