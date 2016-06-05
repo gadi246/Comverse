@@ -565,6 +565,8 @@ solutions section
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size:cover;
+    position: relative;
+    z-index: 100;
 }
 
 .solut1 div {
@@ -618,6 +620,7 @@ solutions section
 
 .solutions-wrapper {
     cursor: pointer;
+    position: relative;
 }
 
 .solutions {
@@ -647,18 +650,19 @@ solutions section
 .solution section {
     width: 100%;
 }
-/*!*spotlight styling*!*/
-/*.solutions .grid {*/
-    /*position: relative;*/
-/*}*/
-/*.spot-light {*/
-    /*width: 100%;*/
-    /*height: 300px;*/
-    /*position: absolute;*/
-    /*background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(237,237,237,0.3) 0%, rgba(243,243,243,0) 33%, rgba(246,246,246,0) 47%);*/
-    /*top: -45%;*/
+/*spotlight styling*/
+.solutions .grid {
+    position: relative;
+}
+.spot-light {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(237,237,237,0.3) 0%, rgba(243,243,243,0) 33%, rgba(246,246,246,0) 47%);
+    top: -45%;
+    z-index: 10;
 
-/*}*/
+}
 
 /*=================
 events section
@@ -1198,7 +1202,7 @@ margin-right: 0;
     .solution h6 {
      font-size: 1.3rem;
     }
-    /*success*/
+    /*====success=====*/
     .stories .col-narrow {
         display: none;
     }
