@@ -365,11 +365,10 @@ lower header
     cursor: pointer;
     position: absolute;
     bottom: 24px;
-
 }
 
 .press-wrapper li {
-    display: inline-block;
+    float: left;
     width: 31%;
     margin-left: 3%;
 
@@ -562,8 +561,10 @@ solutions section
 /*bg-img for the solutions icons*/
 .solution div {
     height: 60px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size:cover;
 }
 
 .solut1 div {
@@ -630,10 +631,6 @@ solutions section
 .solutions a,
 .solutions button {
     color: #fff;
-}
-
-.solutions button {
-
 }
 
 .solutions li {
@@ -1168,7 +1165,8 @@ margin-right: 0;
    responsive design
 =======================*/
 
-   /*====medium size===*/
+   /*====medium size===
+    ===================*/
 
 @media (max-width: 959px) and (min-width: 767px) {
     /*=====upper-header====*/
@@ -1182,15 +1180,37 @@ margin-right: 0;
         padding-top: 50px;
     }
       .main-nav {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
           margin-top: 52px;
       }
     .nav-tabs:last-child > a {
         bottom: -8px;
     }
-    
 
+    /*=====lower-header====*/
+    .press h3 {
+        font-size: 1.9rem;
+    }
+    /*=====solutions====*/
+    .solutions li {
+        margin-left: 0;
+    }
+    .solution h6 {
+     font-size: 1.3rem;
+    }
+    /*success*/
+    .stories .col-narrow {
+        display: none;
+    }
+    .stories .col-wide {
+        width: 49%;
+    }
+    .stories .small-story {
+        width: 100%;
+        height: 100%;
 
+    }
+    /*========footer==========*/
       footer .grid *:not(small){
           display: none;
       }
