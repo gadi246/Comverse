@@ -1202,6 +1202,10 @@ margin-right: 0;
     .solution h6 {
      font-size: 1.3rem;
     }
+    /*=====events=====*/
+    .event-wrapper > div {
+        width: 37%;
+    }
     /*====success=====*/
     .stories .col-narrow {
         display: none;
