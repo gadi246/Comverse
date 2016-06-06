@@ -1244,11 +1244,16 @@ margin-right: 0;
     /*====mobile size===
      ===================*/
     @media (max-width: 766px) and (min-width: 320px) {
-
+        .grid {
+            width: 100%;
+        }
+        .grid-mobile {
+            width: 95%;
+            margin: 0 auto;
+        }
         /*====upper-header====*/
         /*minimize the upper header*/
         .upper-header {
-            width: 100%;
             height: 50px;
         }
         /*smal comverse logo*/
@@ -1286,15 +1291,79 @@ margin-right: 0;
             float: none;
             position: absolute;
             top: 1%;
-            right: 1%;
+            right: 0;
         }
         /*displaying the hamburger menu icon*/
         #toggle + label {
             display: inline;
             position: absolute;
             top:40%;
-            left: 3%;
+
         }
+        /*===lower header===*/
+        .lower-header .slide h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+
+        }
+        .lower-header .slide p {
+            font-size: 1.5rem;
+        }
+        .slide li {
+            line-height: 2px!important;/*becoz in the desktop it's on id*/
+        }
+        .slide {
+            padding-top: 0;
+        }
+        /*new blue box elemnt*/
+        .blue-container {
+            background-color: rgba(40, 148, 201, 0.9);
+            background-image: url(images/weDoBG.png);
+            padding-bottom: 2px;
+        }
+        .slider-btn {
+            margin-top: 30px;
+        }
+        /*enlarging the bullets*/
+        .slider-nav div {
+            width: 20px;
+            height: 20px;
+            color: silver;
+            text-align: center;
+
+        }
+        /*centering the number texts in side the bullets*/
+        .slider-nav div h6 {
+            padding-top: 2px;
+            font-size: 1.3rem;
+        }
+        /*press color boxes section */
+        /*back in to normal flow*/
+        .press-wrapper {
+        position: static;
+        }
+        .press-wrapper li {
+        display: block;
+        width: 100%;
+        margin-left:0 ;
+        position: relative;
+        }
+        /*adding the promotion arrows*/
+        .press::after {
+            content: "";
+            display: inline-block;
+            background: url(images/promotion-item-arrow.png) no-repeat;
+            width: 20px;
+            height: 40px;
+            background-size: 100%;
+            position: absolute;
+            right: 5px;
+            top: 40%;
+        }
+        .press h3 {
+            font-size: 2.1rem;
+        }
+        /*=====solutions====*/
 
 
 
@@ -1306,7 +1375,14 @@ margin-right: 0;
 
 
 
-    }
+
+
+
+
+
+
+
+    }/*end*/
 
 
 
@@ -1320,7 +1396,8 @@ margin-right: 0;
            /*position: static;*/
        /*}*/
       /*.press-wrapper ul li {*/
-          /*display: block;*/
+          /*display: bl
+          ock;*/
           /*width: 100%;*/
           /*margin-left:0 ;*/
       /*}*/

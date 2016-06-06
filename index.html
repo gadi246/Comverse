@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-  <div class="upper-header grid" id="back-top">
+  <div class="upper-header grid grid-mobile" id="back-top">
     <div class="logo-img"><a href="http://"><img src="images/comverse-logo.png" alt="logo"></a></div>
     <input type="checkbox" id="toggle"><!--hamburger drop down menu component-->
     <label for="toggle"><img src="images/hamburger-icon.png" alt="hamburger-icon"></label>
@@ -159,7 +159,9 @@
     <ul class="ulunpaded"><!--header slider-->
       <li id="monetize" class="slide">
         <article class="grid">
-          <h1>smartly monetize <br> new business models</h1>
+          <div class="blue-container">
+            <div class="grid-mobile">
+            <h1>smartly monetize <br> new business models</h1>
           <ul>
             <li>
               <p>smart monetization & analytics</p>
@@ -171,12 +173,15 @@
               <p>cutomer aware policy</p>
             </li>
           </ul>
-          <button class="slider-btn">learn more <!-- <img src="images/btnArrow.png" alt="button arrow"> --></button>
+          </div>
+          </div>
+          <div class="grid-mobile"><button class="slider-btn">learn more <!-- <img src="images/btnArrow.png" alt="button arrow"> --></button></div>
         </article>
       </li>
       <li id="fourg" class="slide">
         <article class="grid">
-          <h1>Evolve to IP/4G</h1>
+         <div class="blue-container">
+           <div class="grid-mobile"> <h1>Evolve to IP/4G</h1>
           <ul>
             <li>
               <p>3G/4G service evolution</p>
@@ -188,38 +193,45 @@
               <p>service and device-aware charging</p>
             </li>
           </ul>
-          <button class="slider-btn">learn more</button>
+         </div>
+         </div>
+          <div class="grid-mobile"><button class="slider-btn">learn more</button></div>
         </article>
       </li>
       <li id="digital" class="slide">
         <article class="grid">
-          <h1>digital services</h1>
+         <div class="blue-container"><div class="grid-mobile"> <h1>digital services</h1>
           <p></p>
-          <button class="slider-btn">learn more</button>
+         </div>
+         </div>
+         <div class="grid-mobile"> <button class="slider-btn">learn more</button></div>
         </article>
       </li>
       <li id="free" class="slide onpageload">
         <article class="grid">
-          <h1><span>free</span> your market from <br>IT <span>complexity</span></h1>
+        <div class="blue-container">
+          <div class="grid-mobile"> <h1><span>free</span> your market from <br>IT <span>complexity</span></h1>
           <p>comverse policy studio <br><span>1st</span> ever marketing-oriented policy tool</p>
-          <button class="slider-btn">learn more</button>
+          </div>
+        </div>
+          <div class="grid-mobile"><button class="slider-btn">learn more</button></div>
         </article>
       </li>
     </ul>
-    <div class="slider-nav-wrapper grid">
+    <div class="slider-nav-wrapper grid grid-mobile">
       <nav class="slider-nav"><!--slider bar-->
         <ul class="ulunpaded">
           <li><a href="#free" class="slider-nav-item">
-            <div class="bullet1"></div>
+            <div class="bullet1"><h6>1</h6></div>
           </a></li>
           <li><a href="#monetize" class="slider-nav-item">
-            <div class="bullet2"></div>
+            <div class="bullet2"><h6>2</h6></div>
           </a></li>
           <li><a href="#fourg" class="slider-nav-item">
-            <div class="bullet3"></div>
+            <div class="bullet3"><h6>3</h6></div>
           </a></li>
           <li><a href="#digital" class="slider-nav-item">
-            <div class="bullet4"></div>
+            <div class="bullet4"><h6>4</h6></div>
           </a></li>
         </ul>
       </nav>
