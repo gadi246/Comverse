@@ -631,7 +631,6 @@ solutions section
     background: #43a2c8;
     background-image: url(images/weDoBG.png);
     padding: 21px 0 30px 0;
-
 }
 
 .solutions,
@@ -1301,6 +1300,10 @@ margin-right: 0;
 
         }
         /*===lower header===*/
+        .lower-header {
+         height: auto;
+        }
+
         .lower-header .slide h1 {
             font-size: 2.5rem;
             margin-top: 0;
@@ -1314,6 +1317,13 @@ margin-right: 0;
         }
         .slide {
             padding-top: 0;
+            padding-bottom: 100px;
+        }
+        .slide:nth-child(2) {
+            padding-bottom: 130px;
+        }
+        .slide:nth-child(3){
+            padding-bottom: 200px;
         }
         /*new blue box elemnt*/
         .blue-container {
@@ -1322,15 +1332,17 @@ margin-right: 0;
             padding-bottom: 2px;
         }
         .slider-btn {
-            margin-top: 30px;
+            margin-top: 50px;
+        }
+        .slider-nav {
+            bottom:75px;
         }
         /*enlarging the bullets*/
         .slider-nav div {
             width: 20px;
-            height: 20px;
+            height:20px;
             color: silver;
             text-align: center;
-
         }
         /*centering the number texts in side the bullets*/
         .slider-nav div h6 {
@@ -1339,15 +1351,23 @@ margin-right: 0;
         }
         /*press color boxes section */
         /*back in to normal flow*/
+        .relative-press-wrapper {
+            position: static;
+
+
+        }
         .press-wrapper {
         position: static;
         }
         .press-wrapper li {
+         float: none;
         display: block;
         width: 100%;
         margin-left:0 ;
         position: relative;
+
         }
+
         /*adding the promotion arrows*/
         .press::after {
             content: "";
@@ -1364,6 +1384,10 @@ margin-right: 0;
             font-size: 2.1rem;
         }
         /*=====solutions====*/
+        .solutions {
+
+
+
 
 
 
