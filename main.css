@@ -136,6 +136,10 @@ upper header
     float: left;
     padding-top: 24px;
 }
+#toggle, #toggle + label {
+    display: none;
+}
+
 
 .nav-tabs > a::after {
 
@@ -1266,21 +1270,32 @@ margin-right: 0;
         .lang-login, .search-form form input,  .search-form form button::before {
             display: none;
         }
+         /*restyling the button and undoing it's position*/
         .search-form button {
             position: static;
             background: url(images/searchBtnMobile.png) no-repeat;
             width: 30px;
-            height: 50px;
+            height: 30px;
         }
+        /*hiding the fieldset border*/
         .search-form fieldset {
             border: none;
         }
+        /*displaying the search button conyainer up right becoz the logo margin auto is taking the whole raw*/
         .right-header {
             float: none;
             position: absolute;
             top: 1%;
             right: 1%;
         }
+        /*displaying the hamburger menu icon*/
+        #toggle + label {
+            display: inline;
+            position: absolute;
+            top:40%;
+            left: 3%;
+        }
+
 
 
 
