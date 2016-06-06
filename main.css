@@ -1174,19 +1174,23 @@ margin-right: 0;
 
 @media (max-width: 959px) and (min-width: 767px) {
     /*=====upper-header====*/
-      .grid {
-          width: 95%;
-      }
+    .grid {
+        width: 95%;
+    }
+
     .logo-img img {
-          content: url(images/comverse-logo-medium.png);
-      }
+        content: url(images/comverse-logo-medium.png);
+    }
+
     .logo-img {
         padding-top: 50px;
     }
-      .main-nav {
-          font-size: 1.2rem;
-          margin-top: 52px;
-      }
+
+    .main-nav {
+        font-size: 1.2rem;
+        margin-top: 52px;
+    }
+
     .nav-tabs:last-child > a {
         bottom: -8px;
     }
@@ -1195,39 +1199,105 @@ margin-right: 0;
     .press h3 {
         font-size: 1.9rem;
     }
+
     /*=====solutions====*/
     .solutions li {
         margin-left: 0;
     }
+
     .solution h6 {
-     font-size: 1.3rem;
+        font-size: 1.3rem;
     }
+
     /*=====events=====*/
     .event-wrapper > div {
         width: 37%;
     }
+
     /*====success=====*/
     .stories .col-narrow {
         display: none;
     }
+
     .stories .col-wide {
         width: 49%;
     }
+
     .stories .small-story {
         width: 100%;
         height: 100%;
 
     }
+
     /*========footer==========*/
-      footer .grid *:not(small){
-          display: none;
-      }
+    footer .grid *:not(small) {
+        display: none;
+    }
+
+}
+/*end of medium size*/
+
+    /*====mobile size===
+     ===================*/
+    @media (max-width: 766px) and (min-width: 320px) {
+
+        /*====upper-header====*/
+        /*minimize the upper header*/
+        .upper-header {
+            width: 100%;
+            height: 50px;
+        }
+        /*smal comverse logo*/
+        .logo-img img {
+            content: url(images/comverse-logo-medium.png);
+        }
+        /*center the logo*/
+        .logo-img {
+           margin: 0 auto;
+            padding: 0;
+            width: 110px;
+           float: none;
+        }
+        /*hiding the main menu*/
+        .main-nav {
+            display: none;
+        }
+        /*hiding the right header elemnts */
+        .lang-login, .search-form form input,  .search-form form button::before {
+            display: none;
+        }
+        .search-form button {
+            position: static;
+            background: url(images/searchBtnMobile.png) no-repeat;
+            width: 30px;
+            height: 50px;
+        }
+        .search-form fieldset {
+            border: none;
+        }
+        .right-header {
+            float: none;
+            position: absolute;
+            top: 1%;
+            right: 1%;
+        }
 
 
 
 
 
-    /*press items*/
+
+
+
+
+
+    }
+
+
+
+
+
+        /*press items*/
        /*.grid {*/
            /*width:100%;*/
        /*}*/
