@@ -1402,11 +1402,24 @@ margin-right: 0;
         .events {
             height: auto;
         }
+        .events h3 {
+            font-size: 1.7rem;
+        }
+        .events p {
+            overflow: auto;
+            font-size: 1.9rem;
+            line-height: 25px;
+
+        }
         .events li {
             display: block;
             width: 100%;
             margin-left: 0;
             padding-bottom: 20px;
+        }
+        /*===success stories===*/
+        .col-narrow {
+            display: none;
         }
 
 
