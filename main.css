@@ -989,6 +989,10 @@ success stories
     position: absolute;
     top:0;
     transition:all 500ms ease-in-out;
+    height: 100%; /*very meaningful when fluid responsiveness is needed*/
+}
+.small-story {
+    height: 100%;/*very meaningful when fluid responsiveness is needed*/
 }
 .container-wide,
 .container-narrow {
@@ -1421,6 +1425,25 @@ margin-right: 0;
         .col-narrow {
             display: none;
         }
+        .stories .col-wide {
+            float: none;
+            display: block;
+            width: 100%;
+             margin-right: 0;
+            margin-top: 34%;
+
+        }
+        .middle-story li:not(:last-child),
+        .left-story li:not(:first-child) {
+            margin-left: 8px;
+        }
+        .middle-story li:first-child,
+        .middle-story li:last-child,
+        .left-story li:nth-child(2) {
+            margin-left: 0;
+        }
+
+
 
 
 
