@@ -564,62 +564,62 @@ solutions section
 
 /*bg-img for the solutions icons*/
 .solution div {
-    height: 60px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size:cover;
+    height: auto;
+    max-width: 100%;
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0 0;*/
+    /*background-size:cover;*/
     position: relative;
     z-index: 100;
 }
 
 .solut1 div {
-    background: url(images/solution_icon_biz-analitics.png);
+    content: url(images/solution_icon_biz-analitics.png);
 }
 
 .solut2 div {
-    background: url(images/solution_icon_diti-cx.png);
+    content: url(images/solution_icon_diti-cx.png);
 }
 
 .solut3 div {
-    background: url(images/solution_icon_smart-money.png);
+    content: url(images/solution_icon_smart-money.png);
 }
 
 .solut4 div {
-    background: url(images/solution_icon_optimize-efficnt.png);
+    content: url(images/solution_icon_optimize-efficnt.png);
 }
 
 .solut5 div {
-    background: url(images/solution_icon_personal.png);
+    content: url(images/solution_icon_personal.png);
 }
 
 .solut6 div {
-    background: url(images/solution_icon_biz-transform.png);
+    content: url(images/solution_icon_biz-transform.png);
 }
 
 /*hovering images*/
 .solut1:hover div {
-    background: url(images/solution_icon_biz-analitics_hover.png);
+    content: url(images/solution_icon_biz-analitics_hover.png);
 }
 
 .solut2:hover div {
-    background: url(images/solution_icon_diti-cx_hover.png);
+    content: url(images/solution_icon_diti-cx_hover.png);
 }
 
 .solut3:hover div {
-    background: url(images/solution_icon_smart-money_hover.png);
+    content: url(images/solution_icon_smart-money_hover.png);
 }
 
 .solut4:hover div {
-    background: url(images/solution_icon_optimize-efficnt_hover.png);
+    content: url(images/solution_icon_optimize-efficnt_hover.png);
 }
 
 .solut5:hover div {
-    background: url(images/solution_icon_personal_hover.png);
+    content: url(images/solution_icon_personal_hover.png);
 }
 
 .solut6:hover div {
-    background: url(images/solution_icon_biz-transform_hover.png);
+    content: url(images/solution_icon_biz-transform_hover.png);
 }
 
 .solutions-wrapper {
@@ -1250,6 +1250,9 @@ margin-right: 0;
             width: 95%;
             margin: 0 auto;
         }
+        h2 {
+           font-size: 2.2rem;
+        }
         /*====upper-header====*/
         /*minimize the upper header*/
         .upper-header {
@@ -1301,7 +1304,7 @@ margin-right: 0;
         }
         /*===lower header===*/
         .lower-header {
-         height: auto;
+            height: auto;
         }
 
         .lower-header .slide h1 {
@@ -1384,7 +1387,32 @@ margin-right: 0;
             font-size: 2.1rem;
         }
         /*=====solutions====*/
-        .solutions {
+        /*minimizing the fonts size and the icon boxes*/
+        .spot-light {
+            display: none;
+        }
+        .solution h6 {
+            font-size: 1.3rem;
+        }
+        .solutions li{
+            width: 30%;
+            height: 100%;
+        }
+        /*====events====*/
+        .events {
+            height: auto;
+        }
+        .events li {
+            display: block;
+            width: 100%;
+            margin-left: 0;
+            padding-bottom: 20px;
+        }
+
+
+
+
+
 
 
 
