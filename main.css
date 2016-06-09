@@ -1289,7 +1289,7 @@ margin-right: 0;
         .search-form  {
            display: none;
        }
-        /*displaying the hamburger menu icon*/
+        /*displaying the search icon*/
        #search-checkbox +label {
            display: block;
            position: absolute;
@@ -1302,6 +1302,7 @@ margin-right: 0;
            transition: all .15s ease;
            cursor: pointer;
        }
+        /*displaying the search input when checked*/
        #search-checkbox:checked ~ .search-input-mobile {
            display: block;
            width: 100%;
@@ -1323,7 +1324,7 @@ margin-right: 0;
             border: 1px solid silver;
             cursor: pointer;
         }
-        /*styling the main menu*/
+        /*styling the main menuand resetting padding*/
         .main-nav {
             position: absolute;
             width: 100%;
@@ -1368,9 +1369,7 @@ margin-right: 0;
         .nav-tabs:focus a {
             color: #585951;
         }
-        .upper-header ul .nav-tabs:last-child:hover {
-           padding: 0;
-        }
+
         .nav-tabs:hover > a {
             box-shadow: none;
         }
@@ -1383,9 +1382,39 @@ margin-right: 0;
         .nav-tabs:last-child > a {
             bottom: 0;
         }
-
+          /*toggling the menu*/
         #toggle:checked  ~.main-nav {
-            max-height: 500px;/*!!!!!!**/
+            max-height: 2000px;/*!!!!!!**/
+        }
+        /*rearranging the ul's style to fit"*/
+        .dropdown {
+            position: relative;
+            top:0;
+            left:0;
+        }
+        /*rearranging the inner columns of the drop down"*/
+        .dropdown .dropdown-column {
+            float: none;
+            margin-top: 0;
+            margin-left: 0;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+        /*border bottom for the li's*/
+        .dropdown-column li {
+            border-bottom: 1px solid silver;
+        }
+        /*none for the last child*/
+        .dropdown-column:nth-child(2)  li:last-child {
+            border-bottom: none;
+        }
+        .mega-divider,
+        .mega-img {
+            display: none;
+        }
+        .nav-tabs:hover > ul {
+            display: block;
+            max-height: 1000px;
         }
 
 
