@@ -10,11 +10,11 @@
 </head>
 <body>
 <header>
-  <div class="upper-header grid grid-mobile" id="back-top">
+  <div class="upper-header grid" id="back-top">
     <div class="logo-img"><a href="http://"><img src="images/comverse-logo.png" alt="logo"></a></div>
     <input type="checkbox" id="toggle"><!--hamburger drop down menu component-->
     <label for="toggle"><img src="images/hamburger-icon.png" alt="hamburger-icon"></label>
-    <nav class="main-nav">
+    <nav class="main-nav grid-mobile">
       <ul>
         <li class="nav-tabs"><a href="">your needs</a>
           <ul class="dropdown ulunpaded"><!--whole dropdonw-->
@@ -137,7 +137,10 @@
         </li>
       </ul>
     </nav>
-
+    <form><input type="checkbox" id="search-checkbox">
+      <label for="search-checkbox"><img src="images/searchBtnMobile.png" alt=""></label>
+      <input type="search" class="search-input-mobile">
+    </form>
     <div class="right-header">
       <div class="lang-login">
         <select name="" id="" class="lang-selection">
@@ -147,8 +150,6 @@
         </select>
         <a href="#" class="customer-login">Customer login</a>
       </div>
-      <input type="checkbox" id="search-input">
-      <label for="search-input"><img src="images/searchBtnMobile.png" alt=""></label>
       <div class="search-form">
         <form>
           <fieldset>
