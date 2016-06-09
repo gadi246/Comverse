@@ -136,11 +136,10 @@ upper header
     float: left;
     padding-top: 24px;
 }
+#search-input, #search-input +label,
 #toggle, #toggle + label {
     display: none;
 }
-
-
 .nav-tabs > a::after {
 
     content: url(images/divider.png);
@@ -469,7 +468,7 @@ lower header
 .slide span {
     font-weight: 400;
 }
-
+/*======slide show=====*/
 .onpageload {
     display: block;
     background-image: url(images/slide-bg-complexity.jpg);
@@ -518,7 +517,7 @@ lower header
 }
 
 
-/*======slide show=dfd====*/
+
 
 /*===slider bullets navigator===*/
 .slider-nav-wrapper {
@@ -1261,6 +1260,7 @@ margin-right: 0;
         /*minimize the upper header*/
         .upper-header {
             height: 50px;
+            position: relative;
         }
         /*smal comverse logo*/
         .logo-img img {
@@ -1277,34 +1277,30 @@ margin-right: 0;
         .main-nav {
             display: none;
         }
-        /*hiding the right header elemnts */
-        .lang-login, .search-form form input,  .search-form form button::before {
-            display: none;
-        }
-         /*restyling the button and undoing it's position*/
-        .search-form button {
-            position: static;
-            background: url(images/searchBtnMobile.png) no-repeat;
-            width: 30px;
-            height: 30px;
-        }
-        /*hiding the fieldset border*/
-        .search-form fieldset {
-            border: none;
-        }
-        /*displaying the search button conyainer up right becoz the logo margin auto is taking the whole raw*/
-        .right-header {
-            float: none;
-            position: absolute;
-            top: 1%;
-            right: 0;
-        }
+        /*hiding the old search element*/
+        .lang-login, .search-form {
+           display: none;
+       }
+        /*displaying the hamburger menu icon*/
+       #search-input +label {
+           display: block;
+           position: absolute;
+           right:1%;
+           top:8%;
+           background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+           padding: 8px;
+           border-radius: 5px;
+           border: 1px solid silver;
+       }
         /*displaying the hamburger menu icon*/
         #toggle + label {
-            display: inline;
+            display: block;
             position: absolute;
-            top:40%;
-
+            top:10%;
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+            padding: 10px  8px;
+            border-radius: 5px;
+            border: 1px solid silver;
         }
         /*===lower header===*/
         .lower-header {
@@ -1429,6 +1425,7 @@ margin-right: 0;
             float: none;
             display: block;
             width: 100%;
+
              margin-right: 0;
             margin-top: 34%;
 
