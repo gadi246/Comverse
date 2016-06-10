@@ -137,7 +137,10 @@ upper header
     float: left;
     padding-top: 24px;
 }
-/*hiding the mobile search elements*/
+/*hiding the mobile checkbox elements*/
+
+.nav-tabs>label,
+.nav-tabs>input,
 .search-input-mobile,
 #search-checkbox,
 #search-checkbox + label,
@@ -1267,6 +1270,7 @@ margin-right: 0;
         .upper-header {
             height: 50px;
             position: relative;
+            z-index: 100;
         }
         /*smal comverse logo*/
         .logo-img img {
@@ -1332,6 +1336,7 @@ margin-right: 0;
             max-height: 0;
             overflow: hidden;
             transition: all .15s ease;
+            z-index: 900;
         }
         .main-nav ul {
             padding-left:0 ;
@@ -1349,7 +1354,7 @@ margin-right: 0;
              border-bottom: none;
         }
          /*adding the arrow on the left*/
-        .nav-tabs > a::before {
+        .nav-tabs>label::before {
             content: "";
             display: inline-block;
             background: url(images/navCollapseArrowRight.png)no-repeat;
@@ -1384,37 +1389,68 @@ margin-right: 0;
         }
           /*toggling the menu*/
         #toggle:checked  ~.main-nav {
-            max-height: 2000px;/*!!!!!!**/
+            max-height: 6000px;/*!!!!!!**/
         }
         /*rearranging the ul's style to fit"*/
         .dropdown {
             position: relative;
             top:0;
             left:0;
+            z-index: 1000;
         }
+        /*some padding for submenu*/
+        .dropdown.ulunpaded {
+            padding-left: 13px;
+        }
+        .portfolio  .dropdown-column li:first-child a,
+        .portfolio  .dropdown-column li:nth-child(10) a,
+        .portfolio .dropdown-column:nth-child(2) li:nth-child(6) a {
+            color: #585951;
+            text-decoration: none;
+        }
+
+
         /*rearranging the inner columns of the drop down"*/
-        .dropdown .dropdown-column {
+        .nav-tabs .dropdown .dropdown-column {
             float: none;
             margin-top: 0;
             margin-left: 0;
             line-height: 30px;
             text-transform: uppercase;
+            margin-left: 0;
         }
         /*border bottom for the li's*/
         .dropdown-column li {
             border-bottom: 1px solid silver;
         }
-        /*none for the last child*/
+        .dropdown-column:nth-child(1)  li:first-child {
+            border-top: 1px solid silver;
+        }
+        /*no border for the last child*/
         .dropdown-column:nth-child(2)  li:last-child {
             border-bottom: none;
         }
+        /*hidding the mega menu img and didvider elements*/
         .mega-divider,
         .mega-img {
             display: none;
         }
-        .nav-tabs:hover > ul {
+        /*swtiching the main menu a tags child with labels*/
+        .nav-tabs>a {
+            display: none;
+        }
+        .nav-tabs>label {
             display: block;
-            max-height: 1000px;
+        }
+        .nav-tabs>input:checked ~ ul {
+            display: block;
+            height: 100%; /*takes full height as needed*/
+        }
+        .nav-tabs>input:checked + label:before {
+            transform: rotate(90deg);
+            vertical-align: bottom;
+            position: relative;
+            right: 3px;
         }
 
 
@@ -1505,6 +1541,10 @@ margin-right: 0;
         }
         /*=====solutions====*/
         /*minimizing the fonts size and the icon boxes*/
+        .solutions {
+            position: relative;
+            z-index: 10;
+        }
         .spot-light {
             display: none;
         }
