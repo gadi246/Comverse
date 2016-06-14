@@ -1582,20 +1582,32 @@ margin-right: 0;
             float: none;
             display: block;
             width: 100%;
-
              margin-right: 0;
-            margin-top: 34%;
+            margin-left: 1%;
 
         }
+        .stories .middle-story {
+            margin-top: 100px;
+        }
+        .stories .container-wide {
+           height:250px;
+            width: 97% ;
+
+        }
+
         .middle-story li:not(:last-child),
         .left-story li:not(:first-child) {
             margin-left: 8px;
+            width: 31%;
+            height: 80px
         }
         .middle-story li:first-child,
         .middle-story li:last-child,
         .left-story li:nth-child(2) {
             margin-left: 0;
         }
+
+
 
 
 
