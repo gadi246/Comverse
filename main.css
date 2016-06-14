@@ -1179,6 +1179,10 @@ margin-right: 0;
     left:0;
 
 }
+/*hide mobile footer*/
+.mobile-footer > li:not(.social-nav-container){
+display: none;
+}
 
 /*======================
    responsive design
@@ -1607,6 +1611,70 @@ margin-right: 0;
             margin-left: 0;
         }
 
+        /* footer*/
+        footer {
+            background: #212121;
+        }
+        .col-footer:not(.feature-box){
+            display: none;
+        }
+        .feature-box {
+            margin-left: 2.5%;
+            background: #212121;
+            height: auto;
+        }
+        .feature-box article,
+        .feature-box form{
+            display: none;
+        }
+        .mobile-footer > li:first-child,
+        .mobile-footer > li:nth-child(2),
+        .mobile-footer > li:last-child{
+            display: block;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            text-align: left;
+            line-height: 60px;
+        }
+        .mobile-footer > li:first-child {
+            padding-bottom: 0;
+        }
+        .social-nav {
+            position: relative;
+        }
+        .social-nav-container {
+            padding: 10px 0;
+        }
+        .social-nav::before {
+            content: "visit us on";
+            display: inline;
+            color: rgb(240, 240, 240);
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top:20%;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        .mobile-footer > li {
+            border-bottom: 1px solid black;
+        }
+        .mobile-footer > li > a:hover {
+            text-decoration: none;
+        }
+        .mobile-footer select {
+            background: rgba(250, 250, 250, 0.2);
+            width: 20%;
+            color: #fff;
+           border: none;
+            border-radius: 2px;
+            margin-left: 30px;
+            padding: 3px;
+        }
+        small {
+            float:none;
+            margin: 0 auto;
+        }
 
 
 
@@ -1642,20 +1710,7 @@ margin-right: 0;
 
 
 
-        /*press items*/
-       /*.grid {*/
-           /*width:100%;*/
-       /*}*/
-       /*.press-wrapper {*/
-           /*position: static;*/
-       /*}*/
-      /*.press-wrapper ul li {*/
-          /*display: bl
-          ock;*/
-          /*width: 100%;*/
-          /*margin-left:0 ;*/
-      /*}*/
     
-}
+
 	
 
