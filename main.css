@@ -378,9 +378,11 @@ lower header
     position: absolute;
     bottom: 24px;
 }
-
+.press-wrapper ul {
+    display: flex;
+}
 .press-wrapper li {
-    float: left;
+
     width: 31%;
     margin-left: 3%;
 
@@ -1518,6 +1520,9 @@ display: none;
         }
         .press-wrapper {
         position: static;
+        }
+        .press-wrapper ul {
+            display: block;
         }
         .press-wrapper li {
          float: none;
