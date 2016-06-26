@@ -557,6 +557,9 @@ lower header
     border-radius: 2px;
     margin-left: 5px;
 }
+.slider-nav h6 {
+    display: none;
+}
 
 /*========================
 solutions section
@@ -1547,6 +1550,9 @@ display: none;
         }
         .press h3 {
             font-size: 2.1rem;
+        }
+        .slider-nav h6 {
+            display: inline;
         }
         /*=====solutions====*/
         /*minimizing the fonts size and the icon boxes*/
